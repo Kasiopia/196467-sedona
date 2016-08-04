@@ -1,0 +1,308 @@
+html,
+body {
+	min-width: 320px;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
+	font-style: normal;
+	font-family: "PT Sans", Arial, sans-serif;
+	color: #333;
+	background: #f2f2f2;
+}
+
+h1 {
+	font-size: 30px;
+	line-height: 32px;
+	font-weight: bold;
+	font-style: normal;
+	font-family: "PT Sans", Arial, sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	color: #333;
+	background: transparent;
+}
+
+h2 {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	font-style: normal;
+	font-family: "PT Sans", Arial, sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	color: #333;
+	background: transparent
+}
+
+h3 {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: bold;
+	font-style: normal;
+	font-family: "PT Sans", Arial, sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	color: #333;
+	background: transparent;
+}
+
+h4 {
+	font-size: 12px;
+	line-height: 12px;
+	font-weight: bold;
+	font-style: normal;
+	font-family: "PT Sans", Arial, sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	color: #333;
+	background: transparent;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	border: none;
+}
+section {
+	position: relative;
+}
+
+a {
+	display: block;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: transparent;
+}
+
+a:active,
+a:hover,
+a:focus {
+	outline: 0;
+}
+
+p {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
+	font-style: normal;
+	font-family: "PT Sans", Arial, sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	color: #333;
+	background: transparent;
+}
+
+b,
+strong {
+	display: block;
+	font-size: 14px;
+	line-height: 26px;
+	font-style: normal;
+	font-weight: normal;
+	font-family: "PT Sans", Arial, sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	color: #000;
+	background: transparent;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	display: inline-block;
+	vertical-align: top;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+ul,
+input,
+figure {
+	margin: 0;
+	padding: 0;
+}
+
+article,
+aside,
+details,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+	position: relative;
+	display: block;
+}
+
+button,
+select {
+	text-transform: none;
+	cursor: pointer;
+}
+
+.btn {
+	border-radius: 0;
+}
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+	outline: none;
+}
+
+.btn.focus,
+.btn:focus,
+.btn:hover {
+	text-transform: uppercase;
+	color: #fff;
+	background: #81b3d2;
+}
+
+.visually-hidden {
+	display: none;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+/*------INDEX PAGE-----------------------*/
+/*------------header------------*/
+.main-header {
+	width: 1200px;
+	margin: 0 auto;
+	background-color: #fff;
+}
+
+.logo {
+	position: absolute;
+	top: 0px;
+	left: 45%;
+	z-index: 2;
+}
+
+.site-navigation {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	-webkit-justify-content: space-around;
+	justify-content: space-around;
+	padding: 15px 0;
+}
+
+.site-navigation a {
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: bold;
+	font-style: normal;
+	font-family: "PT Sans", Arial, sans-serif;
+	color: #000;
+	background: #fff;
+}
+
+.sedona-fon {
+	background: #fff url("../img/main-background.png") no-repeat top center;
+}
+
+.big-headline {
+	width: 520px;
+	margin: auto;
+	padding-top: 615px;
+	font-size: 21px;
+	line-height: 26px;
+}
+
+.sub-title {
+	padding-top: 20px;
+	padding-bottom: 40px;
+	color: #333;
+}
+
+/*-------main------*/
+
+main {
+	width: 1200px;
+	margin: 0 auto;
+	background-color: #fff;
+}
+
+/*-------section.features-------*/
+
+section.features {
+	margin-bottom: 40px;
+}
+
+.features-illustration {
+	margin-bottom: 60px;
+	background: #81b3d2;
+}
+
+.features-illustration img,
+.illustration-description
+ {
+	float: right;
+}
+
+.illustration-description * {
+	margin: 0 auto;
+	padding-top: 38px;
+	padding-right: 28px;
+	color: #fff;
+}
+
+.headline {
+	width: 215px;
+}
+
+.text-comment {
+	width: 345px;
+}
+
+.block-title {
+	display: inline-block;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+/*------HOTEL PAGE-----------------------*/
+.offers-filter {
+	background: url(../img/background-hotel.jpg) 61% no-repeat;
+	background-size: cover;
+}
+
+.offers-filter .sub-headline {
+	background: transparent;
+}
+
+span{
+	text-transform: uppercase;
+}
+
+.hotel-groups {
+	position: relative;
+}
+
