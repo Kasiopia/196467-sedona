@@ -13,7 +13,7 @@ body {
 h1 {
 	font-size: 30px;
 	line-height: 32px;
-	font-weight: normal;
+	font-weight: bold;
 	font-style: normal;
 	font-family: "PT Sans", Arial, sans-serif;
 	text-align: center;
@@ -98,7 +98,6 @@ strong {
 	display: block;
 	font-size: 14px;
 	line-height: 26px;
-	font-weight: normal;
 	font-style: normal;
 	font-weight: normal;
 	font-family: "PT Sans", Arial, sans-serif;
@@ -110,11 +109,23 @@ strong {
 
 ul {
 	list-style: none;
+
 }
 
 li {
 	display: inline-block;
 	vertical-align: top;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+ul,
+input {
+	margin: 0;
+	padding: 0;
 }
 
 article,
@@ -184,15 +195,44 @@ select {
 	z-index: 2;
 }
 
-.main-navigation {
+.site-navigation {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	-webkit-justify-content: space-around;
+	justify-content: space-around;
+	padding: 15px 0;
+}
+
+.site-navigation a {
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: bold;
 	font-style: normal;
-	font-weight: normal;
 	font-family: "PT Sans", Arial, sans-serif;
 	color: #000;
 	background: #fff;
+}
+
+.sedona-fon {
+	background: #fff url("../img/main-background.png") no-repeat top center;
+}
+
+.big-headline {
+	width: 520px;
+	margin: auto;
+	padding-top: 615px;
+	background: transparent;
+	font-size: 21px;
+	line-height: 26px;
+}
+
+.sub-title {
+	padding-top: 20px;
+	color: #333;
 }
 
 
@@ -223,3 +263,4 @@ span{
 .hotel-groups {
 	position: relative;
 }
+
