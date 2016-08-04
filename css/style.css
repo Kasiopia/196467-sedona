@@ -19,43 +19,43 @@ h1 {
 	text-align: center;
 	text-transform: uppercase;
 	color: #333;
-	background: #fff;
+	background: transparent;
 }
 
 h2 {
 	font-size: 21px;
 	line-height: 26px;
-	font-weight: normal;
+	font-weight: bold;
 	font-style: normal;
 	font-family: "PT Sans", Arial, sans-serif;
 	text-align: center;
 	text-transform: uppercase;
 	color: #333;
-	background: #fff;
+	background: transparent
 }
 
 h3 {
 	font-size: 14px;
 	line-height: 21px;
-	font-weight: normal;
+	font-weight: bold;
 	font-style: normal;
 	font-family: "PT Sans", Arial, sans-serif;
 	text-align: center;
 	text-transform: uppercase;
 	color: #333;
-	background: #fff;
+	background: transparent;
 }
 
 h4 {
 	font-size: 12px;
 	line-height: 12px;
-	font-weight: normal;
+	font-weight: bold;
 	font-style: normal;
 	font-family: "PT Sans", Arial, sans-serif;
 	text-align: center;
 	text-transform: uppercase;
 	color: #333;
-	background: #fff;
+	background: transparent;
 }
 
 img {
@@ -63,7 +63,6 @@ img {
 	height: auto;
 	border: none;
 }
-
 section {
 	position: relative;
 }
@@ -90,7 +89,7 @@ p {
 	text-align: center;
 	text-transform: uppercase;
 	color: #333;
-	background: #fff;
+	background: transparent;
 }
 
 b,
@@ -104,26 +103,25 @@ strong {
 	text-align: center;
 	text-transform: uppercase;
 	color: #000;
-	background: #fff;
+	background: transparent;
 }
 
 ul {
 	list-style: none;
-
 }
 
 li {
 	display: inline-block;
 	vertical-align: top;
 }
-
 p,
 h1,
 h2,
 h3,
 h4,
 ul,
-input {
+input,
+figure {
 	margin: 0;
 	padding: 0;
 }
@@ -131,8 +129,6 @@ input {
 article,
 aside,
 details,
-figcaption,
-figure,
 footer,
 header,
 hgroup,
@@ -142,7 +138,6 @@ nav,
 section {
 	position: relative;
 	display: block;
-	font-size: 0px;
 }
 
 button,
@@ -179,12 +174,18 @@ select {
 .text-center {
 	text-align: center;
 }
-/*------Index------*/
 
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+/*------INDEX PAGE-----------------------*/
+/*------------header------------*/
 .main-header {
 	width: 1200px;
 	margin: 0 auto;
-	margin-bottom: 290px;
 	background-color: #fff;
 }
 
@@ -225,14 +226,59 @@ select {
 	width: 520px;
 	margin: auto;
 	padding-top: 615px;
-	background: transparent;
 	font-size: 21px;
 	line-height: 26px;
 }
 
 .sub-title {
 	padding-top: 20px;
+	padding-bottom: 40px;
 	color: #333;
+}
+
+/*-------main------*/
+
+main {
+	width: 1200px;
+	margin: 0 auto;
+	background-color: #fff;
+}
+
+/*-------section.features-------*/
+
+section.features {
+	margin-bottom: 40px;
+}
+
+.features-illustration {
+	margin-bottom: 60px;
+	background: #81b3d2;
+}
+
+.features-illustration img,
+.illustration-description
+ {
+	float: right;
+}
+
+.illustration-description * {
+	margin: 0 auto;
+	padding-top: 38px;
+	padding-right: 28px;
+	color: #fff;
+}
+
+.headline {
+	width: 215px;
+}
+
+.text-comment {
+	width: 345px;
+}
+
+.block-title {
+	display: inline-block;
+	text-align: center;
 }
 
 
@@ -242,11 +288,7 @@ select {
 
 
 
-
-
-
-
-/*--------HOTEL PAGE-------*/
+/*------HOTEL PAGE-----------------------*/
 .offers-filter {
 	background: url(../img/background-hotel.jpg) 61% no-repeat;
 	background-size: cover;
