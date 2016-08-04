@@ -1,0 +1,187 @@
+html,
+body {
+	min-width: 320px;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
+	font-style: normal;
+	font-family: "PT Sans", Arial, sans-serif;
+	color: #333;
+	background: #f2f2f2;
+}
+
+h1 {
+	font-size: 30px;
+	line-height: 32px;
+	font-weight: normal;
+	font-style: normal;
+	font-family: "PT Sans", Arial, sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	color: #333;
+	background: #fff;
+}
+
+h2 {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: normal;
+	font-style: normal;
+	font-family: "PT Sans", Arial, sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	color: #333;
+	background: #fff;
+}
+
+h3 {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
+	font-style: normal;
+	font-family: "PT Sans", Arial, sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	color: #333;
+	background: #fff;
+}
+
+h4 {
+	font-size: 12px;
+	line-height: 12px;
+	font-weight: normal;
+	font-style: normal;
+	font-family: "PT Sans", Arial, sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	color: #333;
+	background: #fff;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	border: none;
+}
+
+section {
+	position: relative;
+}
+
+a {
+	display: block;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: transparent;
+}
+
+a:active,
+a:hover,
+a:focus {
+	outline: 0;
+}
+
+p {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
+	font-style: normal;
+	font-family: "PT Sans", Arial, sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	color: #333;
+	background: #fff;
+}
+
+b,
+strong {
+	display: block;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: normal;
+	font-style: normal;
+	font-weight: normal;
+	font-family: "PT Sans", Arial, sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	color: #000;
+	background: #fff;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	display: inline-block;
+	vertical-align: top;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+	display: block;
+}
+
+button,
+select {
+	text-transform: none;
+	cursor: pointer;
+}
+
+.btn {
+	border-radius: 0;
+}
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+	outline: none;
+}
+
+.btn.focus,
+.btn:focus,
+.btn:hover {
+	text-transform: uppercase;
+	color: #fff;
+	background: #81b3d2;
+}
+
+.visually-hidden {
+	display: none;
+}
+/*-------------------*/
+
+.text-center {
+	text-align: center;
+}
+
+/*--------HOTEL PAGE-------*/
+.offers-filter {
+	background: url(../img/background-hotel.jpg) 61% no-repeat;
+	background-size: cover;
+}
+
+.offers-filter .sub-headline {
+	background: transparent;
+}
+
+span{
+	text-transform: uppercase;
+}
+
+.hotel-groups {
+	position: relative;
+}
