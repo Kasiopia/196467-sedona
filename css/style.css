@@ -71,6 +71,7 @@ a {
 	display: block;
 	text-transform: uppercase;
 	text-decoration: none;
+	color: #000;
 	background: transparent;
 }
 
@@ -139,6 +140,7 @@ section {
 	position: relative;
 	display: block;
 	font-size: 0;
+	line-height: 0;
 }
 
 button,
@@ -349,9 +351,74 @@ section.features {
 .main-footer {
 	width: 1200px;
 	margin: 0 auto;
+	padding: 19px 0;
 	background-color: #fff;
 }
 
+.main-footer .main-headline {
+	display: inline-block;
+	width: 400px;
+	vertical-align: middle;
+	line-height: 26px;
+}
+
+.footer-social {
+	display: inline-block;
+	width: 400px;
+	margin: 0;
+	vertical-align: middle;
+}
+
+.social-btn {
+	display: inline-block;
+	width: 46px;
+	height: 48px;
+	margin: 0 6px;
+	vertical-align: middle;
+	background: #81b3d2 url("../img/sprites.png") no-repeat center;
+	transition:
+	background-position 0.5s,
+	background-color 0.5s;
+}
+
+.social-btn:hover {
+	background-color: green;
+}
+
+.social-btn-inst {
+	background-position: 13px 17px;
+}
+
+.social-btn-fb {
+	background-position: -34px 14px;
+}
+
+.social-btn-ytb {
+	background-position: -87px 17px;
+}
+
+.social-btn-inst:hover {
+	background-position: 0px 0px;
+}
+
+.social-btn-fb:hover {
+	background-position: -50px 0px;
+}
+
+.social-btn-ytb:hover {
+	background-position: -100px 0px;
+}
+
+.footer-copyright {
+	display: inline-block;
+	margin: 0;
+	width: 400px;
+	vertical-align: middle;
+}
+
+.footer-copyright .btn {
+	background: transparent;
+}
 
 /*------HOTEL PAGE-----------------------*/
 .offers-filter {
@@ -371,22 +438,24 @@ span{
 	position: relative;
 }
 
-/*popap*/
+/*-------------------------popap----------------------------*/
 .form-horizontal {
-	width: 568px;
+	display: none;
+	width: 458px;
 	margin: 0 auto;
-	padding-bottom: 19px;
-	text-align: center;
+	padding: 55px 55px;
 	background: #fff;
 }
 
 .form-group {
 	margin-bottom: 15px;
-	text-align: left;
+	text-align: right;
+	display: flex;
+	justify-content: space-between;
 }
 
 .form-control {
-	width: 346px;
+	width: 311px;
 	padding: 8px 15px;
 	font-size: 14px;
 	line-height: 26px;
@@ -394,19 +463,19 @@ span{
 	font-style: normal;
 	font-family: "PT Sans", Arial, sans-serif;
 	text-transform: uppercase;
-	text-align: left;
 	color: #000;
 	background: #f2f2f2;
 	outline: none;
 }
 
 .small-form {
-	width: 114px;
+	width: 84px;
+	text-align: center;
 }
 
 .control-label {
 	font-size: 14px;
-	line-height: 26px;
+	line-height: 44px;  /*для выравнивания по вертикали*/
 	font-weight: bold;
 	font-style: normal;
 	font-family: "PT Sans", Arial, sans-serif;
@@ -416,5 +485,100 @@ span{
 }
 
 .form-horizontal .btn {
-	padding: 6px 196px;
+	width: 100%;
+}
+
+.control {
+	position: relative;
+}
+
+.minus::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: 85px;
+	width: 12px;
+	height: 3px;
+	background: #a9a9a9;
+	cursor: pointer;
+}
+
+.plus::before {
+	content: "";
+	position: absolute;
+	transform: rotate(90deg);
+	top: 50%;
+	right: 14%;
+	width: 12px;
+	height: 3px;
+	background: #a9a9a9;
+	cursor: pointer;
+}
+
+.plus::after {
+	content: "";
+	position: absolute;
+	top: 22px;
+	right: 14%;
+	width: 12px;
+	height: 3px;
+	background: #a9a9a9;
+	cursor: pointer;
+}
+
+
+@-webkit-keyframes bounce {
+    0% {
+        -webkit-transform: translate(-50%,-70%);
+        transform: translate(-50%,-70%);
+    }
+
+    70% {
+        -webkit-transform: translate(-50%,-40%);
+        transform: translate(-50%,-40%);
+    }
+
+    90% {
+        -webkit-transform: translate(-50%,-10%);
+        transform: translate(-50%,-10%);
+    }
+
+    100% {
+        -webkit-transform: translate(-50%,-5%);
+        transform: translate(-50%,-5%);
+    }
+}
+
+@keyframes bounce {
+    0% {
+        -webkit-transform: translate(-50%,-70%);
+        transform: translate(-50%,-70%);
+    }
+
+    70% {
+        -webkit-transform: translate(-50%,-40%);
+        transform: translate(-50%,-40%);
+    }
+
+    90% {
+        -webkit-transform: translate(-50%,-10%);
+        transform: translate(-50%,-10%);
+    }
+
+    100% {
+        -webkit-transform: translate(-50%,-5%);
+        transform: translate(-50%,-5%);
+    }
+}
+
+.show-map {
+	position: fixed;
+	top: 5%;
+	left: 50%;
+	z-index: 200;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	display: block;
+	-webkit-animation: bounce 0.4s;
+	animation: bounce 0.4s;
 }

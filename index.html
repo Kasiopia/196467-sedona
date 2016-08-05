@@ -38,6 +38,7 @@
 			<b class="sub-title">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</b>
 		</div>
 	</header>
+
 	<main>
 		<section class="features">
 			<div class="features-illustration clearfix">
@@ -87,19 +88,16 @@
 				<p class="text-comment">— №5 —</p>
 				<p class="text-comment">Большинство едет в гранд каньон и толпится там</p>
 			</div>
-
 		</section>
-
 		<section class="offers text-center">
 			<h2 class="main-headline">Заинтересовались?</h2>
 			<p class="text-comment">Укажите предпологаемые даты поездки,</p>
 			<p class="text-comment">и мы покажем вам лучше предложения в Седоне</p>
-			<a class="btn" href="#popap">Поиск гостиницы в седоне</a>
+			<a class="btn js-forma" href="#popap">Поиск гостиницы в седоне</a>
 		</section>
 		<section class="map">
 			<img src="img/big-map.jpg" width="1200" height="593" alt="map">
 		</section>
-
 	</main>
 
 	<footer class="main-footer">
@@ -124,30 +122,32 @@
 	<!-- модальное окно -->
 	<form class="form-horizontal" action="#" method="post" id="search-hotel">
 		<div class="form-group">
-			<label class="control-label">Дата заезда:
-				<input class="form-control"type="text" name="data-in" value="24 апреля 2016">
-			</label>
+			<label class="control-label">Дата заезда:</label>
+			<input class="form-control"type="text" name="data-in" value="24 апреля 2016">
 		</div>
 		<div class="form-group">
-			<label class="control-label">Дата выезда:
-				<input class="form-control"type="text" name="data-out" value="4 июля 2016">
-			</label>
+			<label class="control-label">Дата выезда:</label>
+			<input class="form-control"type="text" name="data-out" value="4 июля 2016">
 		</div>
 		<div class="form-group">
-			<label class="control-label">Взрослые:
-				<input class="form-control small-form" type="text" name="adults" value="2">
-			</label>
-		</div>
-		<div class="form-group">
-			<label class="control-label">Дети:
-				<input class="form-control small-form" type="text" name="children" value="0">
-			</label>
+			<div class="control">
+				<label class="control-label">Взрослые:</label>
+				<span class="minus"></span>
+				<input class="form-control small-form" type="type" name="adults" value="2">
+				<span class="plus"></span>
+			</div>
+			<div class="control">
+				<label class="control-label">Дети:</label>
+				<span class="minus"></span>
+				<input class="form-control small-form" type="type" name="children" value="1">
+				<span class="plus"></span>
+			</div>
 		</div>
 		<button type="submit" class="btn">Найти</button>
 	</form>
 	<!-- /модальное окно -->
 
-
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="js/js.js"></script>
 </body>
 </html>
