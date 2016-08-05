@@ -277,8 +277,9 @@ section.features {
 }
 
 .text-comment {  /*общий класс для многих блоков*/
-	width: 288px;
+	width: 280px;
 	margin: 0 auto;
+	padding-top: 34px;
 }
 
 .block-title {
@@ -289,12 +290,8 @@ section.features {
 	vertical-align: middle;
 }
 
-.block-title > img {
-	margin-bottom: 20px;
-}
-
 .sub-headline {
-	margin-bottom: 20px;
+	padding-top: 34px;
 }
 
 .left .illustration-description{
@@ -312,7 +309,7 @@ section.features {
 .feature {
 	width: 400px;
 	display: inline-block;
-	padding: 60px 0;
+	padding: 50px 0 64px;
 	text-align: center;
 	vertical-align: middle;
 }
@@ -331,6 +328,7 @@ section.features {
 
 .offers .text-comment {
 	width: auto;
+	padding: 0px;
 }
 
 .offers .text-comment:nth-child(3) {
