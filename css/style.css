@@ -1,8 +1,8 @@
 html,
 body {
 	min-width: 320px;
-	font-size: 21px;
-	line-height: 26px;
+	font-size: 16px;
+	line-height: 21px;
 	font-weight: normal;
 	font-style: normal;
 	font-family: "PT Sans", Arial, sans-serif;
@@ -35,20 +35,8 @@ h2 {
 }
 
 h3 {
-	font-size: 21px;
+	font-size: 16px;
 	line-height: 21px;
-	font-weight: bold;
-	font-style: normal;
-	font-family: "PT Sans", Arial, sans-serif;
-	text-align: center;
-	text-transform: uppercase;
-	color: #333;
-	background: transparent;
-}
-
-h4 {
-	font-size: 12px;
-	line-height: 12px;
 	font-weight: bold;
 	font-style: normal;
 	font-family: "PT Sans", Arial, sans-serif;
@@ -63,6 +51,7 @@ img {
 	height: auto;
 	border: none;
 }
+
 section {
 	position: relative;
 }
@@ -73,6 +62,7 @@ a {
 	text-decoration: none;
 	color: #000;
 	background: transparent;
+	border: none;
 }
 
 a:active,
@@ -111,10 +101,10 @@ ul {
 	list-style: none;
 }
 
-li {
-	display: inline-block;
-	vertical-align: top;
+span {
+	text-transform: uppercase;
 }
+
 p,
 h1,
 h2,
@@ -151,7 +141,7 @@ select {
 
 .btn {
 	display: inline-block;
-	padding: 6px 17px;
+	padding: 12px 17px;
 	font-size: 14px;
 	line-height: 21px;
 	font-style: normal;
@@ -162,6 +152,7 @@ select {
 	color: #fff;
 	background: #81b3d2;
 	border-radius: 0;
+	border: none;
 }
 
 .btn.active.focus,
@@ -180,7 +171,12 @@ select {
 .text-center {/*общий класс для многих блоков*/
 	text-align: center;
 }
-
+/*
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+*/
 .clearfix:after {/*общий класс для многих блоков*/
     content: '';
     clear: both;
@@ -192,7 +188,7 @@ select {
 .main-header {
 	width: 1200px;
 	margin: 0 auto;
-	background-color: #fff;
+	background-color: #fefefe;
 }
 
 .logo {
@@ -224,14 +220,23 @@ select {
 	background: #fff;
 }
 
+.site-navigation a:hover {
+	color: #81b3d2;
+}
+
+.site-navigation a:active {
+	color: #b2b2b2; 
+}
+
+/*-------section.about------*/
 .sedona-fon {
+	padding-top: 615px;
 	background: #fff url("../img/main-background.png") no-repeat top center;
 }
 
 .big-headline {
 	width: 520px;
 	margin: auto;
-	padding-top: 615px;
 }
 
 .sub-title {
@@ -258,7 +263,7 @@ section.features {
 	background: #81b3d2;
 }
 
-.features-illustration img,
+.illustration-image,
 .illustration-description
  {
 	float: right;
@@ -292,6 +297,7 @@ section.features {
 
 .sub-headline {
 	padding-top: 34px;
+	font-size: 21px;
 }
 
 .left .illustration-description{
@@ -327,15 +333,13 @@ section.features {
 }
 
 .offers .text-comment {
-	width: auto;
-	padding: 0px;
+	width: 365px;
+	margin: 0 auto;
 }
 
-.offers .text-comment:nth-child(3) {
+.offers .text-comment {
 	margin-bottom: 43px;
 }
-/*как применить отступ именно от последнего элемента с классом .text-comment внутри секции с классом .offers?*/
-
 
 .offers .btn {
 	padding: 22px 140px;
@@ -343,7 +347,6 @@ section.features {
 	line-height: 26px;
 	background: #766357;
 }
-
 
 /*-------footer-------*/
 .main-footer {
@@ -353,18 +356,17 @@ section.features {
 	background-color: #fff;
 }
 
-.main-footer .main-headline {
-	display: inline-block;
-	width: 400px;
-	vertical-align: middle;
-	line-height: 26px;
-}
-
-.footer-social {
+.main-footer .main-headline,
+.footer-social,
+.footer-copyright {
 	display: inline-block;
 	width: 400px;
 	margin: 0;
 	vertical-align: middle;
+}
+
+.main-footer .main-headline {
+	line-height: 26px;
 }
 
 .social-btn {
@@ -380,61 +382,195 @@ section.features {
 }
 
 .social-btn:hover {
-	background-color: green;
+	background: #669ec0 url("../img/sprites.png") no-repeat center;
 }
 
-.social-btn-inst {
-	background-position: 13px 17px;
-}
-
-.social-btn-fb {
-	background-position: -34px 14px;
-}
-
-.social-btn-ytb {
-	background-position: -87px 17px;
-}
-
+.social-btn-inst,
 .social-btn-inst:hover {
-	background-position: 0px 0px;
+	background-position: 10px 14px;
 }
 
+.social-btn-fb,
 .social-btn-fb:hover {
-	background-position: -50px 0px;
+	background-position: -40px 14px;
 }
 
+.social-btn-ytb,
 .social-btn-ytb:hover {
-	background-position: -100px 0px;
+	background-position: -90px 14px;
 }
 
-.footer-copyright {
+
+.social-btn:active {
+	background: #5496bd url("../img/sprites.png") no-repeat center;
+}
+
+.social-btn-inst:active {
+	background-position: 11px -38px;
+}
+
+.social-btn-fb:active {
+	background-position: -41px -40px;
+}
+
+.social-btn-ytb:active {
+	background-position: -88px -38px;
+}
+
+.copyright-title {
 	display: inline-block;
-	margin: 0;
-	width: 400px;
 	vertical-align: middle;
 }
 
 .footer-copyright .btn {
-	background: transparent;
+	width: 113px;
+	height: 39px;
+	padding: 0px;
+	vertical-align: middle;
+	background: transparent url(../img/sprites.png) no-repeat top center;
+	background-position: 0 -154px ;
 }
 
-/*------HOTEL PAGE-----------------------*/
+.footer-copyright .btn:hover {
+	background-position: -270px -154px ;
+}
+
+.footer-copyright .btn:active {
+	background-position: -134px -155px ;
+}
+
+/*----------------HOTEL PAGE-------------*/
 .offers-filter {
 	background: url(../img/background-hotel.jpg) 61% no-repeat;
 	background-size: cover;
 }
 
+.form-offers,
+.sort,
+.hotels {
+	width: 1056px;
+	margin: 0 auto;
+}
+
 .offers-filter .sub-headline {
+	color: #fff;
 	background: transparent;
 }
 
-span{
-	text-transform: uppercase;
+.list-options {
+	padding-top: 10px;
 }
+
+.form-checkbox {
+	display: none;
+}
+
+.checkbox-group .control-label {
+	position: relative;
+	display: inline-block;
+	margin-bottom: 30px;
+	padding-left: 35px;
+	line-height: 21px;
+	color: #fff;
+}
+
+.checkbox-group .control-label::before {
+	content: '';
+	position: absolute;
+	width: 22px;
+	height: 22px;
+	top: -4px;
+	left: 0;
+	background: url(../img/sprites.png) no-repeat;
+	background-position: -152px 0px;
+}
+
+.list-options input[type="checkbox"]:checked + .control-label::after {
+	content: '';
+	position: absolute;
+	width: 26px;
+	height: 22px;
+	top: -4px;
+	left: 0;
+	background: url(../img/sprites.png) no-repeat;
+	background-position: -152px 0px;
+	background-position: -148px -53px;
+}
+
+.checkbox-group .control-label:hover::before {
+	background-position: -202px -1px;
+}
+
+.list-options input[type="checkbox"]:checked + .control-label::after {
+	background-position: -200px -52px;
+}
+
+/*  Позиции для disabled
+.checkbox-group .control-label:active::before {
+	background-position: -251px -4px;
+}
+
+.checkbox-group .control-label:active::after {
+	background-position: -252px -51px;
+}
+*/
+
+/*-----------------section.sort-------------------*/
+.sort {
+	padding: 32px 0;
+}
+
+.big-headline {
+	width: auto;
+}
+
+.block-inline {
+	display: inline-block;
+}
+
+.sorting {
+	margin-left: 50px;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: normal;
+	font-style: normal;
+	font-family: "PT Sans", Arial, sans-serif;
+	text-transform: uppercase;
+	color: #000;
+}
+
+.list-sort a{
+	margin-left: 32px;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: normal;
+	font-style: normal;
+	font-family: "PT Sans", Arial, sans-serif;
+	color: #b2b2b2;
+	border-bottom: 1px dashed #81b3d2;
+}
+
+.list-sort a:hover {
+	color: #81b3d2;
+	border-bottom: 1px dashed #81b3d2;
+}
+
+.list-sort a:active {
+	color: #000;
+	border-bottom: none;
+}
+
+.list-sort .active {
+	color: #92bdd8;
+	border-bottom: none;
+}
+
 
 .hotel-groups {
 	position: relative;
 }
+
+
 
 /*-------------------------popap----------------------------*/
 .form-horizontal {
@@ -446,6 +582,7 @@ span{
 }
 
 .form-group {
+	position: relative;
 	margin-bottom: 15px;
 	text-align: right;
 	display: flex;
@@ -464,6 +601,16 @@ span{
 	color: #000;
 	background: #f2f2f2;
 	outline: none;
+	border: 2px solid transparent;
+}
+
+.form-control:hover {
+	background: #ebebeb;
+}
+
+.form-control:active {
+	background: #ffffff;
+	border: 2px solid #e5e5e5;
 }
 
 .small-form {
@@ -482,8 +629,38 @@ span{
 	text-transform: uppercase;
 }
 
+.icon::after {
+	content: "";
+	position: absolute;
+	top: 12px;
+	right: 8px;
+	width: 21px;
+	height: 22px;
+	z-index: 20;
+	background: transparent url(../img/sprites.png) no-repeat top center;
+	background-position: -102px -103px ;
+	cursor: pointer;
+}
+
+.icon:hover::after {
+	background-position: -52px -101px ;
+}
+
+.icon:active::after {
+	background-position: -4px -102px ;
+}
+
 .form-horizontal .btn {
 	width: 100%;
+}
+
+.form-horizontal .btn:hover {
+	background: #669ec0;
+}
+
+.form-horizontal .btn:active {
+	color: #88b6d1;
+	background: #5496bd;
 }
 
 .control {
@@ -524,6 +701,17 @@ span{
 	cursor: pointer;
 }
 
+/*.minus:hover::before,
+.plus:hover::before,
+.plus::hover::after {
+	background: #000;
+}
+
+.minus:active::before,
+.plus:active::before,
+.plus:active::after {
+	background: #81b3d2;
+}*/
 
 @-webkit-keyframes bounce {
     0% {

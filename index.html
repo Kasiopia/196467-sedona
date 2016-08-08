@@ -13,7 +13,7 @@
 </head>
 <body>
 	<header class="main-header">
-		<a href="#" class="logo">
+		<a class="logo">
 			<img src="img/logo.png" width="138" height="70" alt="logo">
 		</a>
 		<nav class="main-navigation">
@@ -32,17 +32,21 @@
 				</li>
 			</ul>
 		</nav>
-		<h1 class="visually-hidden">Sedona<br></h1>
-		<div class="sedona-fon">
-			<h1 class="big-headline">Седона — небольшой городок в аризоне, заслуживающий большего!</h1>
-			<b class="sub-title">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</b>
-		</div>
 	</header>
 
 	<main>
+		<section class="about">
+			<h1 class="visually-hidden">Sedona<br></h1>
+			<div class="sedona-fon">
+				<h1 class="big-headline">Седона — небольшой городок в аризоне, заслуживающий большего!</h1>
+				<b class="sub-title">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</b>
+			</div>
+		</section>
 		<section class="features">
 			<div class="features-illustration clearfix">
-				<img src="img/figure-town.jpg" width="800" height="256" alt="town Sedona">
+				<div class="illustration-image">
+					<img src="img/figure-town.jpg" width="800" height="256" alt="town Sedona">
+				</div>
 				<div class="illustration-description">
 					<h2 class="main-headline">Настоящий городок</h2>
 					<p class="text-comment">— №1 —</p>
@@ -65,7 +69,9 @@
 				<p class="text-comment">Не только китайского, но и местного производства!</p>
 			</div>
 			<div class="features-illustration left clearfix">
-				<img src="img/figure-devil's-bridge.jpg" width="800" height="256" alt="devil's bridge">
+				<div class="illustration-image">
+					<img src="img/figure-devil's-bridge.jpg" width="800" height="256" alt="devil's bridge">
+				</div>
 				<div class="illustration-description">
 					<h2 class="main-headline">Там есть Мост дьявола</h2>
 					<p class="text-comment">— №2 —</p>
@@ -91,8 +97,7 @@
 		</section>
 		<section class="offers text-center">
 			<h2 class="main-headline">Заинтересовались?</h2>
-			<p class="text-comment">Укажите предпологаемые даты поездки,</p>
-			<p class="text-comment">и мы покажем вам лучше предложения в Седоне</p>
+			<p class="text-comment">Укажите предпологаемые даты поездки,<br> и мы покажем вам лучше предложения в Седоне</p>
 			<a class="btn js-forma" href="#popap">Поиск гостиницы в седоне</a>
 		</section>
 		<section class="map">
@@ -101,33 +106,31 @@
 	</main>
 
 	<footer class="main-footer">
-		<h2 class="main-headline">
-			<a href="#">#Visitsedona</a>
-		</h2>
-		<p class="footer-social">
-			<span class="visually-hidden">Подписывайтесь на нас в соцсетях:</span>
-			<a class="social-btn social-btn-inst" href="#"></a>
-			<a class="social-btn social-btn-fb" href="#"></a>
-			<span class="visually-hidden">Подписывайтесь на наш канал в youtube:</span>
-			<a class="social-btn social-btn-ytb" href="#"></a>
-		</p>
-		<p class="footer-copyright">
-			<b>Website by:</b>
-			<a class="btn" href="https://htmlacademy.ru">
-				<img src="img/copyright-logo.png" width="113" height="59" alt="права на сайт ">
-			</a>
-		</p>
+			<h2 class="main-headline">
+				<a href="#">#Visitsedona</a>
+			</h2>
+			<p class="footer-social">
+				<span class="visually-hidden">Подписывайтесь на нас в соцсетях:</span>
+				<a class="social-btn social-btn-inst" href="#"></a>
+				<a class="social-btn social-btn-fb" href="#"></a>
+				<span class="visually-hidden">Подписывайтесь на наш канал в youtube:</span>
+				<a class="social-btn social-btn-ytb" href="#"></a>
+			</p>
+			<p class="footer-copyright">
+				<b class="copyright-title">Website by</b>
+				<a class="btn" href="https://htmlacademy.ru"></a>
+			</p>
 	</footer>
 
 	<!-- модальное окно -->
 	<form class="form-horizontal" action="#" method="post" id="search-hotel">
 		<div class="form-group">
-			<label class="control-label">Дата заезда:</label>
-			<input class="form-control"type="text" name="data-in" value="24 апреля 2016">
+			<label for="data-in" class="control-label icon">Дата заезда:</label>
+			<input class="form-control" type="text" id="data-in" name="data-in" value="24 апреля 2016">
 		</div>
 		<div class="form-group">
-			<label class="control-label">Дата выезда:</label>
-			<input class="form-control"type="text" name="data-out" value="4 июля 2016">
+			<label for="data-out" class="control-label icon">Дата выезда:</label>
+			<input class="form-control" type="text" id="data-out" name="data-out" value="4 июля 2016">
 		</div>
 		<div class="form-group">
 			<div class="control">

@@ -1,4 +1,3 @@
-@@ -1,178 +0,0 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -15,7 +14,7 @@
 <body>
 
 	<header class="main-header">
-		<a href="#" class="logo">
+		<a href="index.html" class="logo">
 			<img src="img/logo.png" width="138" height="70" alt="logo">
 		</a>
 		<nav class="main-navigation">
@@ -40,38 +39,38 @@
 
 		<section class="offers-filter">
 
-			<form action="#" method="post">
+			<form class="form-offers" action="#" method="post">
 				<div class="checkbox-group">
 					<h3 class="sub-headline">Ифраструктура:</h3>
-					<ul>
+					<ul class="list-options">
 						<li>
-							<input type="checkbox" name="infrastructure" id="ch1" value="бассейн" checked>
-							<label for="ch1">Бассейн</label>
+							<input class="form-checkbox" type="checkbox" name="infrastructure" id="ch1" value="бассейн" checked>
+							<label class="control-label" for="ch1">Бассейн</label>
 						</li>
 						<li>
-							<input type="checkbox" name="infrastructure" id="ch2" value="парковка">
-							<label for="ch2">Парковка</label>
+							<input class="form-checkbox" type="checkbox" name="infrastructure" id="ch2" value="парковка">
+							<label class="control-label" for="ch2">Парковка</label>
 						</li>
 						<li>
-							<input type="checkbox" name="infrastructure" id="ch3" value="wi-fi">
-							<label for="ch3">Wi-fi</label>
+							<input class="form-checkbox" type="checkbox" name="infrastructure" id="ch3" value="wi-fi">
+							<label class="control-label" for="ch3">Wi-fi</label>
 						</li>
 					</ul>
 				</div>
 				<div class="checkbox-group">
 					<h3 class="sub-headline">Тип жилья:</h3>
-					<ul>
+					<ul class="list-options">
 						<li>
-							<input type="checkbox" name="housing" id="ch3" value="гостиница" checked>
-							<label for="ch3">Гостиница</label>
+							<input class="form-checkbox" type="checkbox" name="housing" id="ch4" value="гостиница" checked>
+							<label class="control-label" for="ch4">Гостиница</label>
 						</li>
 						<li>
-							<input type="checkbox" name="housing" id="ch4" value="мотель" checked>
-							<label for="ch4">Мотель</label>
+							<input class="form-checkbox" type="checkbox" name="housing" id="ch5" value="мотель" checked>
+							<label class="control-label" for="ch5">Мотель</label>
 						</li>
 						<li>
-							<input type="checkbox" name="housing" id="ch5" value="апартаменты" checked>
-							<label for="ch5">Апартаменты</label>
+							<input class="form-checkbox" type="checkbox" name="housing" id="ch6" value="апартаменты" checked>
+							<label class="control-label" for="ch6">Апартаменты</label>
 						</li>
 					</ul>
 				</div>
@@ -96,27 +95,25 @@
 		</section>
 
 		<section class="sort">
-			<h2 class="main-headline">Найдено: 3</h2>
-			<div class="sorting">
-				<span>Сортировка:</span>
-				<ul class="list-by">
-					<li>
-						<a class="active-list-by">По цене</a>
-					</li>
-					<li>
-						<a href="#by-type">По типу</a>
-					</li>
-					<li>
-						<a href="#by-function">По функционалу</a>
-					</li>
-					<li>
-						<a class="sorting-up"></a>
-					</li><!--  тут подключается sorting-up-active -->
-					<li>
-						<a class="sorting-down  sorting-up-active" href="#by-down"></a>
-					</li>
-				</ul>
-			</div>
+			<h1 class="big-headline block-inline">Найдено: 3</h1>
+			<span class="sorting">Сортировка:</span>
+			<ul class="list-sort block-inline">
+				<li class="block-inline">
+					<a class="active">По цене</a>
+				</li>
+				<li class="block-inline">
+					<a href="#by-type">По типу</a>
+				</li>
+				<li class="block-inline">
+					<a href="#by-function">По функционалу</a>
+				</li>
+				<li class="block-inline">
+					<a class="sorting-up"></a>
+				</li><!--  тут подключается sorting-up-active -->
+				<li class="block-inline">
+					<a class="sorting-down sorting-up-active" href="#by-down"></a>
+				</li>
+			</ul>
 		</section>
 
 		<section class="hotels">
@@ -154,22 +151,20 @@
 	</main>
 
 	<footer class="main-footer">
-		<h2 class="main-headline">
-			<a href="#">#Visitsedona</a>
-		</h2>
-		<p class="footer-social">
-			<span class="visually-hidden">Подписывайтесь на нас в соцсетях:</span>
-			<a class="social-btn social-btn-inst" href="#"></a>
-			<a class="social-btn social-btn-fb" href="#"></a>
-			<span class="visually-hidden">Подписывайтесь на наш канал в youtube:</span>
-			<a class="social-btn social-btn-ytb" href="#"></a>
-		</p>
-		<p class="footer-copyright">
-			<b>Website by:</b>
-			<a class="btn" href="https://htmlacademy.ru">
-				<img src="img/copyright-logo.png" width="113" height="59" alt="права на сайт ">
-			</a>
-		</p>
+			<h2 class="main-headline">
+				<a href="#">#Visitsedona</a>
+			</h2>
+			<p class="footer-social">
+				<span class="visually-hidden">Подписывайтесь на нас в соцсетях:</span>
+				<a class="social-btn social-btn-inst" href="#"></a>
+				<a class="social-btn social-btn-fb" href="#"></a>
+				<span class="visually-hidden">Подписывайтесь на наш канал в youtube:</span>
+				<a class="social-btn social-btn-ytb" href="#"></a>
+			</p>
+			<p class="footer-copyright">
+				<b class="copyright-title">Website by</b>
+				<a class="btn" href="https://htmlacademy.ru"></a>
+			</p>
 	</footer>
 	
 	<script src="js/js.js"></script>

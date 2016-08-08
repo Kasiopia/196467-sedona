@@ -1,0 +1,154 @@
+.inst, .inst-down, .fb, .fb-down, .ytb, .ytb-down, .★-★ ★ ★, .calendar-down, .calendar-hvr, .calendar, .copyright, .copyright-down, .copyright-hvr, .checkbox, .checkbox-hvr, .checkbox-disabled, .checkbox-on, .checkbox-on-hvr, .checkbox-on-disabled, .arrow-up, .arrow-up-hvr, .arrow-up-down, .arror-down-down, .arrow-down-hvr, .arrow-down{
+	background: url(sprites.png) no-repeat;
+}
+
+.inst{
+	background-position: -4px -3px ;
+	width: 17px;
+	height: 15px;
+}
+
+.inst-down{
+	background-position: -3px -55px ;
+	width: 17px;
+	height: 15px;
+}
+
+.fb{
+	background-position: -57px -1px ;
+	width: 10px;
+	height: 19px;
+}
+
+.fb-down{
+	background-position: -58px -55px ;
+	width: 10px;
+	height: 19px;
+}
+
+.ytb{
+	background-position: -103px -4px ;
+	width: 20px;
+	height: 16px;
+}
+
+.ytb-down{
+	background-position: -101px -56px ;
+	width: 20px;
+	height: 16px;
+}
+
+.★-★ ★ ★{
+	background-position: -175px -112px ;
+	width: 89px;
+	height: 17px;
+}
+
+.calendar-down{
+	background-position: -4px -102px ;
+	width: 21px;
+	height: 22px;
+}
+
+.calendar-hvr{
+	background-position: -52px -101px ;
+	width: 21px;
+	height: 22px;
+}
+
+.calendar{
+	background-position: -102px -103px ;
+	width: 21px;
+	height: 22px;
+}
+
+.copyright{
+	background-position: 0 -154px ;
+	width: 113px;
+	height: 39px;
+}
+
+.copyright-down{
+	background-position: -134px -155px ;
+	width: 113px;
+	height: 39px;
+}
+
+.copyright-hvr{
+	background-position: -270px -154px ;
+	width: 113px;
+	height: 39px;
+}
+
+.checkbox{
+	background-position: -152px 0;
+	width: 22px;
+	height: 22px;
+}
+
+.checkbox-hvr{
+	background-position: -202px -1px ;
+	width: 22px;
+	height: 22px;
+}
+
+.checkbox-disabled{
+	background-position: -251px -4px ;
+	width: 22px;
+	height: 22px;
+}
+
+.checkbox-on{
+	background-position: -148px -53px ;
+	width: 26px;
+	height: 22px;
+}
+
+.checkbox-on-hvr{
+	background-position: -200px -52px ;
+	width: 26px;
+	height: 22px;
+}
+
+.checkbox-on-disabled{
+	background-position: -252px -51px ;
+	width: 26px;
+	height: 22px;
+}
+
+.arrow-up{
+	background-position: -304px -10px ;
+	width: 11px;
+	height: 10px;
+}
+
+.arrow-up-hvr{
+	background-position: -356px -7px ;
+	width: 11px;
+	height: 10px;
+}
+
+.arrow-up-down{
+	background-position: -405px -7px ;
+	width: 11px;
+	height: 10px;
+}
+
+.arror-down-down{
+	background-position: -405px -59px ;
+	width: 11px;
+	height: 10px;
+}
+
+.arrow-down-hvr{
+	background-position: -354px -58px ;
+	width: 11px;
+	height: 10px;
+}
+
+.arrow-down{
+	background-position: -307px -58px ;
+	width: 11px;
+	height: 10px;
+}
+
