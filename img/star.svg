@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 19px;
+        fill: #81b3d2;
+        font-family: symbols-sedona, symbols;
+        text-transform: uppercase;
+      }
+
+      .cls-2 {
+        font-size: 7px;
+      }
+    </style>
+  </defs>
+  <text id="_" data-name="★ ★" class="cls-1" x="0.756" y="15.112">★<tspan class="cls-2"> </tspan>★   </text>
+</svg>
