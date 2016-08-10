@@ -12,14 +12,15 @@
 	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
-	<header class="main-header">
+
+	<header class="main-header container">
 		<a class="logo">
 			<img src="img/logo.png" width="138" height="70" alt="logo">
 		</a>
 		<nav class="main-navigation">
 			<ul class="site-navigation">
 				<li>
-					<a href="#">Информация</a>
+					<a href="info.html">Информация</a>
 				</li>
 				<li>
 					<a href="visual-content.html">Фото и видео</a>
@@ -34,13 +35,15 @@
 		</nav>
 	</header>
 
-	<main>
+	<main class="container">
 		<section class="about">
 			<h1 class="visually-hidden">Sedona<br></h1>
 			<div class="sedona-fon">
-				<h1 class="big-headline">Седона — небольшой городок в аризоне, заслуживающий большего!</h1>
-				<b class="sub-title">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</b>
+				<img class="sedona-fon-title" src="img/main-background-title.png" width="458" height="352" alt="Sedona">
+				<img src="img/zebra.png" width="1200" height="57" alt="zebra">
 			</div>
+			<h1 class="big-headline">Седона — небольшой городок в аризоне, заслуживающий большего!</h1>
+			<b class="sub-title">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</b>
 		</section>
 		<section class="features">
 			<div class="features-illustration clearfix">
@@ -105,21 +108,21 @@
 		</section>
 	</main>
 
-	<footer class="main-footer">
-			<h2 class="main-headline">
-				<a href="#">#Visitsedona</a>
-			</h2>
-			<p class="footer-social">
-				<span class="visually-hidden">Подписывайтесь на нас в соцсетях:</span>
-				<a class="social-btn social-btn-inst" href="#"></a>
-				<a class="social-btn social-btn-fb" href="#"></a>
-				<span class="visually-hidden">Подписывайтесь на наш канал в youtube:</span>
-				<a class="social-btn social-btn-ytb" href="#"></a>
-			</p>
-			<p class="footer-copyright">
-				<b class="copyright-title">Website by</b>
-				<a class="btn" href="https://htmlacademy.ru"></a>
-			</p>
+	<footer class="main-footer container">
+		<h2 class="main-headline">
+			<a href="#">#Visitsedona</a>
+		</h2>
+		<p class="footer-social">
+			<span class="visually-hidden">Подписывайтесь на нас в соцсетях:</span>
+			<a class="social-btn social-btn-inst" href="#"></a>
+			<a class="social-btn social-btn-fb" href="#"></a>
+			<span class="visually-hidden">Подписывайтесь на наш канал в youtube:</span>
+			<a class="social-btn social-btn-ytb" href="#"></a>
+		</p>
+		<p class="footer-copyright">
+			<b class="copyright-title">Website by</b>
+			<a class="btn" href="https://htmlacademy.ru"></a>
+		</p>
 	</footer>
 
 	<!-- модальное окно -->
@@ -142,7 +145,7 @@
 			<div class="control">
 				<label class="control-label">Дети:</label>
 				<span class="minus"></span>
-				<input class="form-control small-form" type="type" name="children" value="1">
+				<input class="form-control small-form" type="type" name="children" value="0">
 				<span class="plus"></span>
 			</div>
 		</div>

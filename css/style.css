@@ -171,12 +171,12 @@ select {
 .text-center {/*общий класс для многих блоков*/
 	text-align: center;
 }
-/*
+
 .container {
 	width: 1200px;
 	margin: 0 auto;
 }
-*/
+
 .clearfix:after {/*общий класс для многих блоков*/
     content: '';
     clear: both;
@@ -186,8 +186,6 @@ select {
 /*------INDEX PAGE-----------------------*/
 /*------------header------------*/
 .main-header {
-	width: 1200px;
-	margin: 0 auto;
 	background-color: #fefefe;
 }
 
@@ -230,8 +228,16 @@ select {
 
 /*-------section.about------*/
 .sedona-fon {
-	padding-top: 615px;
-	background: #fff url("../img/main-background.png") no-repeat top center;
+	margin-bottom: 60px;
+	background: url("../img/main-background.jpg") no-repeat top center;
+	background-position-y: 18%;
+}
+
+.sedona-fon-title {
+	display: block;
+	width: 458px;
+	margin: 0 auto;
+	padding-top: 78px;
 }
 
 .big-headline {
@@ -248,8 +254,6 @@ select {
 /*-------main------*/
 
 main {
-	width: 1200px;
-	margin: 0 auto;
 	background-color: #fff;
 }
 
@@ -350,8 +354,6 @@ section.features {
 
 /*-------footer-------*/
 .main-footer {
-	width: 1200px;
-	margin: 0 auto;
 	padding: 19px 0;
 	background-color: #fff;
 }
@@ -440,6 +442,7 @@ section.features {
 }
 
 /*----------------HOTEL PAGE-------------*/
+/*----------------section.offers-filter----------------*/
 .offers-filter {
 	background: url(../img/background-hotel.jpg) 61% no-repeat;
 	background-size: cover;
@@ -447,14 +450,25 @@ section.features {
 
 .form-offers,
 .sort,
-.hotels {
-	width: 1056px;
-	margin: 0 auto;
+.hotel-groups {
+	padding: 30px 72px 30px 72px;
 }
 
 .offers-filter .sub-headline {
+	margin-bottom: 25px;
+	text-align: left;
 	color: #fff;
 	background: transparent;
+}
+
+.checkbox-group {
+	display: inline-block;
+	margin-right: 115px;
+	vertical-align: middle;
+}
+
+.cost-filter {
+	float: right;
 }
 
 .list-options {
@@ -493,7 +507,6 @@ section.features {
 	top: -4px;
 	left: 0;
 	background: url(../img/sprites.png) no-repeat;
-	background-position: -152px 0px;
 	background-position: -148px -53px;
 }
 
@@ -505,27 +518,30 @@ section.features {
 	background-position: -200px -52px;
 }
 
-/*  Позиции для disabled
-.checkbox-group .control-label:active::before {
+.list-options input[type="checkbox"]:disabled + label::before {
 	background-position: -251px -4px;
 }
 
-.checkbox-group .control-label:active::after {
-	background-position: -252px -51px;
+.list-options input[type="checkbox"]:checked:disabled + label::after {
+	background-position: -251px -50px;
 }
-*/
+
+.form-offers .btn {
+	padding: 7px 35px;
+	font-weight: normal;
+	background: transparent;
+	border-radius: 2px;
+	border: 2px solid #fff;
+}
+
+.form-offers .btn:hover {
+	color: #000;
+	background: #fff;
+}
 
 /*-----------------section.sort-------------------*/
-.sort {
-	padding: 32px 0;
-}
-
-.big-headline {
+.sort .big-headline {
 	width: auto;
-}
-
-.block-inline {
-	display: inline-block;
 }
 
 .sorting {
@@ -537,6 +553,15 @@ section.features {
 	font-family: "PT Sans", Arial, sans-serif;
 	text-transform: uppercase;
 	color: #000;
+}
+
+.block-inline {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.list-sort li {
+	display: inline-block;
 }
 
 .list-sort a{
@@ -565,12 +590,104 @@ section.features {
 	border-bottom: none;
 }
 
+/*-------------section.hotels --------------*/
 
-.hotel-groups {
-	position: relative;
+.left-content .main-headline:hover {
+	cursor: pointer;
 }
 
+.left-content .main-headline:hover {
+	color: #81b3d2;
+}
 
+.left-content .main-headline:active {
+	color: #cacaca;
+}
+
+.hotel-groups {
+	display: flex;
+	justify-content: space-between;
+	border-top: 1px solid #e5e5e5;
+}
+
+.hotels .hotel-groups:last-child {
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.img-block,
+.text-block {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.text-block {
+	width: 260px;
+	padding-left: 30px;
+}
+
+.hotel-groups .main-headline {
+	text-align: left;
+	width: auto;
+	margin-bottom: 12px;
+}
+
+.hotel-groups .titul,
+.hotel-groups .price {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
+	font-style: normal;
+	font-family: "PT Sans", Arial, sans-serif;
+	text-transform: uppercase;
+	color: #333;
+	background: transparent;
+}
+
+.hotel-groups .price {
+	margin-left: 35px;
+}
+
+.hotel-groups .btn {
+	padding: 4px 17px;
+}
+
+.btn-booking {
+	margin-top: 7px;
+	margin-left: 6px;
+	background: #766357;
+}
+
+.btn-booking:hover {
+	background: #604e43;
+}
+
+.btn-booking:active {
+	color: #857871;
+	background: #503e33;
+}
+
+.star-block {
+	text-align: right;
+}
+
+.star {
+	display: inline-block;
+	margin-bottom: 47px;
+	vertical-align: middle;
+}
+
+.rating {
+	display: block;
+	padding: 4px 16px;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
+	font-style: normal;
+	font-family: "PT Sans", Arial, sans-serif;
+	color: #666;
+	background: #f2f2f2;
+
+}
 
 /*-------------------------popap----------------------------*/
 .form-horizontal {
@@ -583,15 +700,15 @@ section.features {
 
 .form-group {
 	position: relative;
+	display: flex;
 	margin-bottom: 15px;
 	text-align: right;
-	display: flex;
 	justify-content: space-between;
 }
 
 .form-control {
 	width: 311px;
-	padding: 8px 15px;
+	padding: 0px 15px;
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: bold;
@@ -629,6 +746,15 @@ section.features {
 	text-transform: uppercase;
 }
 
+.control {
+	position: relative;
+	width: 50%;
+}
+
+.control .control-label {
+	padding-right: 34px;
+}
+
 .icon::after {
 	content: "";
 	position: absolute;
@@ -654,64 +780,40 @@ section.features {
 	width: 100%;
 }
 
-.form-horizontal .btn:hover {
+.btn:hover {
 	background: #669ec0;
 }
 
-.form-horizontal .btn:active {
+.btn:active {
 	color: #88b6d1;
 	background: #5496bd;
 }
 
-.control {
-	position: relative;
-}
-
-.minus::before {
-	content: "";
+.minus,
+.plus {
 	position: absolute;
-	top: 50%;
-	right: 85px;
+	top: 20px;
+	right: 88px;
 	width: 12px;
 	height: 3px;
 	background: #a9a9a9;
 	cursor: pointer;
 }
 
-.plus::before {
-	content: "";
-	position: absolute;
-	transform: rotate(90deg);
-	top: 50%;
-	right: 14%;
-	width: 12px;
-	height: 3px;
-	background: #a9a9a9;
-	cursor: pointer;
+.plus {
+	top: 20px;
+	right: 15px;
 }
 
-.plus::after {
-	content: "";
-	position: absolute;
-	top: 22px;
-	right: 14%;
-	width: 12px;
-	height: 3px;
-	background: #a9a9a9;
-	cursor: pointer;
-}
-
-/*.minus:hover::before,
-.plus:hover::before,
-.plus::hover::after {
+.minus:hover,
+.plus:hover{
 	background: #000;
 }
 
-.minus:active::before,
-.plus:active::before,
-.plus:active::after {
+.minus:active,
+.plus:active {
 	background: #81b3d2;
-}*/
+}
 
 @-webkit-keyframes bounce {
     0% {

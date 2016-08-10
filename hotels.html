@@ -13,14 +13,14 @@
 </head>
 <body>
 
-	<header class="main-header">
+	<header class="main-header container">
 		<a href="index.html" class="logo">
 			<img src="img/logo.png" width="138" height="70" alt="logo">
 		</a>
 		<nav class="main-navigation">
 			<ul class="site-navigation">
 				<li>
-					<a href="#">Информация</a>
+					<a href="info.html">Информация</a>
 				</li>
 				<li>
 					<a href="visual-content.html">Фото и видео</a>
@@ -35,7 +35,7 @@
 		</nav>
 	</header>
 
-	<main>
+	<main class="container">
 
 		<section class="offers-filter">
 
@@ -96,61 +96,102 @@
 
 		<section class="sort">
 			<h1 class="big-headline block-inline">Найдено: 3</h1>
-			<span class="sorting">Сортировка:</span>
-			<ul class="list-sort block-inline">
-				<li class="block-inline">
-					<a class="active">По цене</a>
-				</li>
-				<li class="block-inline">
-					<a href="#by-type">По типу</a>
-				</li>
-				<li class="block-inline">
-					<a href="#by-function">По функционалу</a>
-				</li>
-				<li class="block-inline">
-					<a class="sorting-up"></a>
-				</li><!--  тут подключается sorting-up-active -->
-				<li class="block-inline">
-					<a class="sorting-down sorting-up-active" href="#by-down"></a>
-				</li>
-			</ul>
+			<span class="sorting block-inline">Сортировка:</span>
+			<div class="flex block-inline">
+				<ul class="list-sort block-inline">
+					<li>
+						<a class="active">По цене</a>
+					</li>
+					<li>
+						<a href="#by-type">По типу</a>
+					</li>
+					<li>
+						<a href="#by-function">По функционалу</a>
+					</li>
+				</ul>
+				<ul class="list-sort block-inline">
+					<li>
+						<a class="sorting-up"></a>
+					</li><!--  тут подключается sorting-up-active -->
+					<li>
+						<a class="sorting-down sorting-up-active" href="#by-down"></a>
+					</li>
+				</ul>
+			</div>
+
 		</section>
 
 		<section class="hotels">
 			<div class="hotel-groups">
-				<img src="img/amara-hotel.jpg" alt="amara">
-				<h2 class="main-headline">Amara resort & spa</h2>
-				<span class="titul">Гостиница</span>
-				<span class="price">от 3500 Р.</span>
-				<a href="#">Подробнее</a>
-				<a href="#">Забронировать</a>
-				<span>****</span>
-				<span>Рейтинг</span>
+				<div class="left-content">
+					<div class="img-block">
+						<img src="img/amara-hotel.jpg" alt="amara">
+					</div>
+					<div class="text-block">
+						<h2 class="main-headline">Amara resort & spa</h2>
+						<span class="titul">Гостиница</span>
+						<span class="price">от 3500 Р.</span>
+						<a class="btn" href="#">Подробнее</a>
+						<a class="btn btn-booking"href="#">Забронировать</a>
+					</div>
+				</div>
+				<div class="right-content">
+					<div class="star-block">
+						<img class="star" src="img/star.svg" alt="star">
+						<img class="star" src="img/star.svg" alt="star">
+						<img class="star" src="img/star.svg" alt="star">
+						<img class="star" src="img/star.svg" alt="star">
+					</div>
+					<span class="rating">Рейтинг: 8,5</span>
+				</div>
 			</div>
 			<div class="hotel-groups">
-				<img src="img/desert.jpg" alt="desert">
-				<h2 class="main-headline">Desert quail inn</h2>
-				<span class="titul">Мотель</span>
-				<span class="price">от 2000 Р.</span>
-				<a href="#">Подробнее</a>
-				<a href="#">Забронировать</a>
-				<span>**</span>
-				<span>Рейтинг</span>
+				<div class="left-content">
+					<div class="img-block">
+						<img src="img/desert.jpg" alt="desert">
+					</div>
+					<div class="text-block">
+						<h2 class="main-headline">Desert quail inn</h2>
+						<span class="titul">Мотель</span>
+						<span class="price">от 2000 Р.</span>
+						<a class="btn" href="#">Подробнее</a>
+						<a class="btn btn-booking"href="#">Забронировать</a>
+					</div>
+				</div>
+				<div class="right-content">
+					<div class="star-block">
+						<img class="star" src="img/star.svg" alt="star">
+						<img class="star" src="img/star.svg" alt="star">
+					</div>
+					<span class="rating">Рейтинг: 8,9</span>
+				</div>
 			</div>
 			<div class="hotel-groups">
-				<img src="img/villas.jpg" alt="villas">
-				<h2 class="main-headline">Villas at poco diablo</h2>
-				<span class="titul">FАпартаменты</span>
-				<span class="price">от 4000 Р.</span>
-				<a href="#">Подробнее</a>
-				<a href="#">Забронировать</a>
-				<span>***</span>
-				<span>Рейтинг</span>
+				<div class="left-content">
+					<div class="img-block">
+						<img src="img/villas.jpg" alt="villas">
+					</div>
+					<div class="text-block">
+						<h2 class="main-headline">Villas at poco diablo</h2>
+						<span class="titul">Апартаменты</span>
+						<span class="price">от 4000 Р.</span>
+						<a class="btn" href="#">Подробнее</a>
+						<a class="btn btn-booking"href="#">Забронировать</a>
+					</div>
+				</div>
+				<div class="right-content">
+					<div class="star-block">
+						<img class="star" src="img/star.svg" alt="star">
+						<img class="star" src="img/star.svg" alt="star">
+						<img class="star" src="img/star.svg" alt="star">
+					</div>
+					<span class="rating">Рейтинг: 9,2</span>
+				</div>
 			</div>
 		</section>
 	</main>
 
-	<footer class="main-footer">
+	<footer class="main-footer container">
 			<h2 class="main-headline">
 				<a href="#">#Visitsedona</a>
 			</h2>
