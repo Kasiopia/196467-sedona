@@ -562,6 +562,7 @@ section.features {
 
 .list-sort li {
 	display: inline-block;
+	vertical-align: middle;
 }
 
 .list-sort a{
@@ -589,6 +590,49 @@ section.features {
 	color: #92bdd8;
 	border-bottom: none;
 }
+
+.list-sort a {
+	margin-left: 30px;
+}
+
+.up-down-sort {
+	margin-left: 483px;
+}
+
+.list-sort .sorting-up,
+.list-sort .sorting-down{
+	display: inline-block;
+	margin-left: 0px;
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+	border: none;
+	background: url(../img/sprites.png) no-repeat;
+	background-position: -298px -2px;
+}
+
+.list-sort .sorting-down {
+	background: url(../img/sprites.png) no-repeat;
+	background-position: -298px -49px;
+	}
+
+.list-sort .sorting-up:hover {
+	background-position: -350px 0px;
+}
+
+.list-sort .sorting-down:hover {
+	background-position: -347px -50px;
+}
+
+.list-sort .active-arrow-down {
+	background-position: -395px -49px;
+}
+
+.list-sort .active-arrow-up {
+	background-position: -401px -2px;
+}
+
+
 
 /*-------------section.hotels --------------*/
 
