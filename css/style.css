@@ -14,11 +14,8 @@ h1 {
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
-	font-style: normal;
-	font-family: "PT Sans", Arial, sans-serif;
 	text-align: center;
 	text-transform: uppercase;
-	color: #333;
 	background: transparent;
 }
 
@@ -26,11 +23,8 @@ h2 {
 	font-size: 21px;
 	line-height: 21px;
 	font-weight: bold;
-	font-style: normal;
-	font-family: "PT Sans", Arial, sans-serif;
 	text-align: center;
 	text-transform: uppercase;
-	color: #333;
 	background: transparent
 }
 
@@ -38,11 +32,8 @@ h3 {
 	font-size: 16px;
 	line-height: 21px;
 	font-weight: bold;
-	font-style: normal;
-	font-family: "PT Sans", Arial, sans-serif;
 	text-align: center;
 	text-transform: uppercase;
-	color: #333;
 	background: transparent;
 }
 
@@ -74,9 +65,6 @@ a:focus {
 p {
 	font-size: 14px;
 	line-height: 21px;
-	font-weight: normal;
-	font-style: normal;
-	font-family: "PT Sans", Arial, sans-serif;
 	text-align: center;
 	text-transform: uppercase;
 	color: #333;
@@ -88,9 +76,6 @@ strong {
 	display: block;
 	font-size: 14px;
 	line-height: 26px;
-	font-style: normal;
-	font-weight: normal;
-	font-family: "PT Sans", Arial, sans-serif;
 	text-align: center;
 	text-transform: uppercase;
 	color: #000;
@@ -144,9 +129,7 @@ select {
 	padding: 12px 17px;
 	font-size: 14px;
 	line-height: 21px;
-	font-style: normal;
 	font-weight: bold;
-	font-family: "PT Sans", Arial, sans-serif;
 	text-align: center;
 	text-transform: uppercase;
 	color: #fff;
@@ -178,9 +161,9 @@ select {
 }
 
 .clearfix:after {/*общий класс для многих блоков*/
-    content: '';
-    clear: both;
-    display: table;
+	content: '';
+	clear: both;
+	display: table;
 }
 
 /*------INDEX PAGE-----------------------*/
@@ -212,8 +195,6 @@ select {
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: bold;
-	font-style: normal;
-	font-family: "PT Sans", Arial, sans-serif;
 	color: #000;
 	background: #fff;
 }
@@ -269,7 +250,7 @@ section.features {
 
 .illustration-image,
 .illustration-description
- {
+{
 	float: right;
 }
 
@@ -354,8 +335,14 @@ section.features {
 
 /*-------footer-------*/
 .main-footer {
+	position: relative;
+}
+
+.position-footer {
+	position: absolute;
+	top: -86px;
 	padding: 19px 0;
-	background-color: #fff;
+	background-color: rgba(255, 255, 255, 0.9);
 }
 
 .main-footer .main-headline,
@@ -458,7 +445,6 @@ section.features {
 	margin-bottom: 25px;
 	text-align: left;
 	color: #fff;
-	background: transparent;
 }
 
 .checkbox-group {
@@ -469,6 +455,7 @@ section.features {
 
 .cost-filter {
 	float: right;
+	text-align: center;
 }
 
 .list-options {
@@ -526,6 +513,83 @@ section.features {
 	background-position: -251px -50px;
 }
 
+.padding {
+	margin-left: 10px;
+}
+
+.price-controls {
+	position: relative;
+	border: 2px solid #fff;
+	border-radius: 2px;
+}
+
+.price-controls label {
+	padding-left: 66px;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.price-controls input[type="text"] {
+	width: 64px;
+	padding: 10px 0 10px 5px;
+	font-size: 14px;
+	color: #fff;
+	background: transparent;
+	outline: none;
+	border: none;
+}
+
+.vertical-line {
+	position: absolute;
+	width: 2px;
+	height: 22px;
+	top: 7px;
+	left: 50%;
+	background: #fff;
+}
+
+.range-controls {
+	position: relative;
+	margin-bottom: 12px;
+	overflow: hidden;
+}
+
+.scale {
+	height: 2px;
+	margin: 20px auto;
+	background: #918381;
+}
+
+.bar {
+	width: 83%;
+	height: 2px;
+	background: #fff;
+}
+
+.range-controls .toggle {
+	position: absolute;
+	top: 11px;
+	left: 0px;
+	width: 4px;
+	height: 4px;
+	border: 8px solid #fff;
+	background: #ababab;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.range-controls .min-toggle {
+	left: 0px;
+}
+.range-controls .max-toggle {
+	left: 255px;
+}
+
+.range-controls .toggle:hover {
+	background: #1c4f80;
+}
+
 .form-offers .btn {
 	padding: 7px 35px;
 	font-weight: normal;
@@ -540,6 +604,10 @@ section.features {
 }
 
 /*-----------------section.sort-------------------*/
+.sort {
+	display: flex;
+}
+
 .sort .big-headline {
 	width: auto;
 }
@@ -548,9 +616,6 @@ section.features {
 	margin-left: 50px;
 	font-size: 12px;
 	line-height: 18px;
-	font-weight: normal;
-	font-style: normal;
-	font-family: "PT Sans", Arial, sans-serif;
 	text-transform: uppercase;
 	color: #000;
 }
@@ -569,9 +634,6 @@ section.features {
 	margin-left: 32px;
 	font-size: 12px;
 	line-height: 18px;
-	font-weight: normal;
-	font-style: normal;
-	font-family: "PT Sans", Arial, sans-serif;
 	color: #b2b2b2;
 	border-bottom: 1px dashed #81b3d2;
 }
@@ -601,7 +663,6 @@ section.features {
 
 .list-sort .sorting-up,
 .list-sort .sorting-down{
-	display: inline-block;
 	margin-left: 0px;
 	width: 20px;
 	height: 20px;
@@ -614,22 +675,26 @@ section.features {
 .list-sort .sorting-down {
 	background: url(../img/sprites.png) no-repeat;
 	background-position: -298px -49px;
-	}
+}
 
 .list-sort .sorting-up:hover {
 	background-position: -350px 0px;
+	border-bottom: none;
 }
 
 .list-sort .sorting-down:hover {
 	background-position: -347px -50px;
+	border-bottom: none;
 }
 
 .list-sort .active-arrow-down {
-	background-position: -395px -49px;
+	background-position: -398px -51px;
+	border-bottom: none;
 }
 
 .list-sort .active-arrow-up {
 	background-position: -401px -2px;
+	border-bottom: none;
 }
 
 
@@ -679,9 +744,6 @@ section.features {
 .hotel-groups .price {
 	font-size: 14px;
 	line-height: 21px;
-	font-weight: normal;
-	font-style: normal;
-	font-family: "PT Sans", Arial, sans-serif;
 	text-transform: uppercase;
 	color: #333;
 	background: transparent;
@@ -725,12 +787,16 @@ section.features {
 	padding: 4px 16px;
 	font-size: 14px;
 	line-height: 21px;
-	font-weight: normal;
-	font-style: normal;
-	font-family: "PT Sans", Arial, sans-serif;
 	color: #666;
 	background: #f2f2f2;
 
+}
+
+.hotels-page .position-footer{
+	position: relative;
+	top: 0;
+	padding: 19px 0;
+	background-color: rgb(255, 255, 255);
 }
 
 /*-------------------------popap----------------------------*/
@@ -756,8 +822,6 @@ section.features {
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: bold;
-	font-style: normal;
-	font-family: "PT Sans", Arial, sans-serif;
 	text-transform: uppercase;
 	color: #000;
 	background: #f2f2f2;
@@ -783,8 +847,6 @@ section.features {
 	font-size: 14px;
 	line-height: 44px;  /*для выравнивания по вертикали*/
 	font-weight: bold;
-	font-style: normal;
-	font-family: "PT Sans", Arial, sans-serif;
 	color: #000;
 	background: transparent;
 	text-transform: uppercase;
@@ -860,47 +922,47 @@ section.features {
 }
 
 @-webkit-keyframes bounce {
-    0% {
-        -webkit-transform: translate(-50%,-70%);
-        transform: translate(-50%,-70%);
-    }
+	0% {
+		-webkit-transform: translate(-50%,-70%);
+		transform: translate(-50%,-70%);
+	}
 
-    70% {
-        -webkit-transform: translate(-50%,-40%);
-        transform: translate(-50%,-40%);
-    }
+	70% {
+		-webkit-transform: translate(-50%,-40%);
+		transform: translate(-50%,-40%);
+	}
 
-    90% {
-        -webkit-transform: translate(-50%,-10%);
-        transform: translate(-50%,-10%);
-    }
+	90% {
+		-webkit-transform: translate(-50%,-10%);
+		transform: translate(-50%,-10%);
+	}
 
-    100% {
-        -webkit-transform: translate(-50%,-5%);
-        transform: translate(-50%,-5%);
-    }
+	100% {
+		-webkit-transform: translate(-50%,-5%);
+		transform: translate(-50%,-5%);
+	}
 }
 
 @keyframes bounce {
-    0% {
-        -webkit-transform: translate(-50%,-70%);
-        transform: translate(-50%,-70%);
-    }
+	0% {
+		-webkit-transform: translate(-50%,-70%);
+		transform: translate(-50%,-70%);
+	}
 
-    70% {
-        -webkit-transform: translate(-50%,-40%);
-        transform: translate(-50%,-40%);
-    }
+	70% {
+		-webkit-transform: translate(-50%,-40%);
+		transform: translate(-50%,-40%);
+	}
 
-    90% {
-        -webkit-transform: translate(-50%,-10%);
-        transform: translate(-50%,-10%);
-    }
+	90% {
+		-webkit-transform: translate(-50%,-10%);
+		transform: translate(-50%,-10%);
+	}
 
-    100% {
-        -webkit-transform: translate(-50%,-5%);
-        transform: translate(-50%,-5%);
-    }
+	100% {
+		-webkit-transform: translate(-50%,-5%);
+		transform: translate(-50%,-5%);
+	}
 }
 
 .show-map {
