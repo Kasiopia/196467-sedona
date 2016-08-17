@@ -76,17 +76,25 @@
 				</div>
 				<div class="cost-filter">
 					<h3 class="sub-headline">Стоимость в сутки (Р):</h3>
-					<div class="range-controls">
-						<div class="scale">
-							<div class="bar">
-							</div>
+					<div class="padding">
+						<div class="price-controls">
+							<label for="first-price">
+								От<input type="text" id="first-price" pattern="^[ 0-9]+$" value="0">
+							</label>
+							<span class="vertical-line"></span>
+							<label for="last-price">
+								До<input type="text" id="last-price" pattern="^[ 0-9]+$" value="3000">
+							</label>
 						</div>
-						<div class="toggle min-toggle"></div>
-						<div class="toggle max-toggle"></div>
-					</div>
-					<div class="price-controls">
-						от<input class="price-min" type="text" name="price-min" value="0">
-						до<input class="price-max" type="text" name="price-max" value="30000">
+						<div class="range-controls">
+							<div class="scale">
+								<div class="bar">
+
+								</div>
+							</div>
+							<div class="toggle min-toggle"></div>
+							<div class="toggle max-toggle"></div>
+						</div>
 					</div>
 					<button class="btn" type="submit">Показать</button>
 				</div>
@@ -95,9 +103,9 @@
 		</section>
 
 		<section class="sort">
-			<h1 class="big-headline block-inline">Найдено: 3</h1>
-			<span class="sorting block-inline">Сортировка:</span>
-			<div class="flex block-inline">
+			<h1 class="big-headline">Найдено: 3</h1>
+			<div class="sort-left">
+				<span class="sorting block-inline">Сортировка:</span>
 				<ul class="list-sort block-inline">
 					<li>
 						<a class="active">По цене</a>
@@ -109,16 +117,17 @@
 						<a href="#by-function">По функционалу</a>
 					</li>
 				</ul>
-				<ul class="list-sort block-inline">
-					<li>
+			</div>
+			<div class="sort-right">
+				<ul class="list-sort">
+					<li class="up-down-sort">
 						<a class="sorting-up"></a>
-					</li><!--  тут подключается sorting-up-active -->
+					</li>
 					<li>
-						<a class="sorting-down sorting-up-active" href="#by-down"></a>
+						<a class="sorting-down active-arrow-down" href="#by-down"></a>
 					</li>
 				</ul>
 			</div>
-
 		</section>
 
 		<section class="hotels">
@@ -191,21 +200,25 @@
 		</section>
 	</main>
 
-	<footer class="main-footer container">
-			<h2 class="main-headline">
-				<a href="#">#Visitsedona</a>
-			</h2>
-			<p class="footer-social">
-				<span class="visually-hidden">Подписывайтесь на нас в соцсетях:</span>
-				<a class="social-btn social-btn-inst" href="#"></a>
-				<a class="social-btn social-btn-fb" href="#"></a>
-				<span class="visually-hidden">Подписывайтесь на наш канал в youtube:</span>
-				<a class="social-btn social-btn-ytb" href="#"></a>
-			</p>
-			<p class="footer-copyright">
-				<b class="copyright-title">Website by</b>
-				<a class="btn" href="https://htmlacademy.ru"></a>
-			</p>
+	<footer class="main-footer hotels-page">
+		<div class="container">
+			<div class="position-footer">
+				<h2 class="main-headline">
+					<a href="#">#Visitsedona</a>
+				</h2>
+				<p class="footer-social">
+					<span class="visually-hidden">Подписывайтесь на нас в соцсетях:</span>
+					<a class="social-btn social-btn-inst" href="#"></a>
+					<a class="social-btn social-btn-fb" href="#"></a>
+					<span class="visually-hidden">Подписывайтесь на наш канал в youtube:</span>
+					<a class="social-btn social-btn-ytb" href="#"></a>
+				</p>
+				<p class="footer-copyright">
+					<b class="copyright-title">Website by</b>
+					<a class="btn" href="https://htmlacademy.ru"></a>
+				</p>
+			</div>
+		</div>
 	</footer>
 	
 	<script src="js/js.js"></script>
