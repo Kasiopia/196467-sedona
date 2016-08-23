@@ -5,11 +5,9 @@
 	<title>Добро пожаловать в Sedona!!! - Подбор Отеля</title>
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic,latin" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
 
@@ -38,10 +36,9 @@
 	<main class="container">
 
 		<section class="offers-filter">
-
 			<form class="form-offers" action="#" method="post">
 				<div class="checkbox-group">
-					<h3 class="sub-headline">Ифраструктура:</h3>
+					<h3 class="sub-headline">Инфраструктура:</h3>
 					<ul class="list-options">
 						<li>
 							<input class="form-checkbox" type="checkbox" name="infrastructure" id="ch1" value="бассейн" checked>
@@ -79,17 +76,16 @@
 					<div class="padding">
 						<div class="price-controls">
 							<label for="first-price">
-								От<input type="text" id="first-price" pattern="^[ 0-9]+$" value="0">
+								От<input type="text" id="first-price" pattern="^[ 0-9]+$" placeholder="0" onfocus="placeholder='';" onblur="placeholder='0';">
 							</label>
 							<span class="vertical-line"></span>
 							<label for="last-price">
-								До<input type="text" id="last-price" pattern="^[ 0-9]+$" value="3000">
+								До<input type="text" id="last-price" pattern="^[ 0-9]+$" placeholder="3000" onfocus="placeholder='';" onblur="placeholder='3000';">
 							</label>
 						</div>
 						<div class="range-controls">
 							<div class="scale">
 								<div class="bar">
-
 								</div>
 							</div>
 							<div class="toggle min-toggle"></div>
@@ -99,7 +95,6 @@
 					<button class="btn" type="submit">Показать</button>
 				</div>
 			</form>
-
 		</section>
 
 		<section class="sort">
@@ -198,6 +193,7 @@
 				</div>
 			</div>
 		</section>
+
 	</main>
 
 	<footer class="main-footer hotels-page">

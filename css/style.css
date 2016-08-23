@@ -8,6 +8,7 @@ body {
 	font-family: "PT Sans", Arial, sans-serif;
 	color: #333;
 	background: #f2f2f2;
+	box-shadow: 0px 0 10px rgba(41,52,73,.5);
 }
 
 h1 {
@@ -175,7 +176,7 @@ select {
 .logo {
 	position: absolute;
 	top: 0px;
-	left: 45%;
+	left: 531px;
 	z-index: 2;
 }
 
@@ -211,24 +212,26 @@ select {
 .sedona-fon {
 	margin-bottom: 60px;
 	background: url("../img/main-background.jpg") no-repeat top center;
-	background-position-y: 18%;
+	background-position-y: -56px;
 }
 
 .sedona-fon-title {
 	display: block;
 	width: 458px;
 	margin: 0 auto;
-	padding-top: 78px;
+	padding-top: 76px;
 }
-
+.sedona-fon img:last-child {
+	padding-top: 23px;
+}
 .big-headline {
 	width: 520px;
 	margin: auto;
 }
 
 .sub-title {
-	padding-top: 20px;
-	padding-bottom: 40px;
+	margin-bottom: 51px;
+	padding-top: 27px;
 	color: #333;
 }
 
@@ -256,8 +259,8 @@ section.features {
 
 .illustration-description * {
 	margin: 0 auto;
-	padding-top: 38px;
-	padding-right: 55px;
+	padding-top: 54px;
+	padding-right: 60px;
 	color: #fff;
 }
 
@@ -269,24 +272,24 @@ section.features {
 .text-comment {  /*общий класс для многих блоков*/
 	width: 280px;
 	margin: 0 auto;
-	padding-top: 34px;
+	padding-top: 24px;
 }
 
 .block-title {
 	width: 400px;
 	display: inline-block;
-	padding: 60px 0;
+	padding: 58px 0 80px;
 	text-align: center;
 	vertical-align: middle;
 }
 
 .sub-headline {
-	padding-top: 34px;
+	padding-top: 29px;
 	font-size: 21px;
 }
 
-.left .illustration-description{
-	float: right;
+.left .illustration-image {
+	float: left;
 }
 
 .left > img {
@@ -300,19 +303,19 @@ section.features {
 .feature {
 	width: 400px;
 	display: inline-block;
-	padding: 50px 0 64px;
+	padding: 47px 0 56px;
 	text-align: center;
 	vertical-align: middle;
 }
 
 /*-------section.offers-------*/
 .offers {
-	padding-top: 46px;
+	padding-top: 16px;
 }
 
 .offers .main-headline {
 	width: auto;
-	margin-bottom: 14px;
+	margin-bottom: 8px;
 	font-size: 30px;
 	line-height: 24px;
 }
@@ -323,11 +326,11 @@ section.features {
 }
 
 .offers .text-comment {
-	margin-bottom: 43px;
+	margin-bottom: 52px;
 }
 
 .offers .btn {
-	padding: 22px 140px;
+	padding: 30px 140px;
 	font-size: 21px;
 	line-height: 26px;
 	background: #766357;
@@ -340,8 +343,8 @@ section.features {
 
 .position-footer {
 	position: absolute;
-	top: -86px;
-	padding: 19px 0;
+    top: -120px;
+    padding: 35px 0 37px;
 	background-color: rgba(255, 255, 255, 0.9);
 }
 
@@ -421,10 +424,12 @@ section.features {
 }
 
 .footer-copyright .btn:hover {
+	background: transparent url(../img/sprites.png) no-repeat top center;
 	background-position: -270px -154px ;
 }
 
 .footer-copyright .btn:active {
+	background: transparent url(../img/sprites.png) no-repeat top center;
 	background-position: -134px -155px ;
 }
 
@@ -438,18 +443,21 @@ section.features {
 .form-offers,
 .sort,
 .hotel-groups {
-	padding: 30px 72px 30px 72px;
+	padding: 0px 71px;
 }
 
 .offers-filter .sub-headline {
-	margin-bottom: 25px;
+	margin-bottom: 18px;
+	padding-top: 27px;
+	font-size: 16px;
+    line-height: 21px;
 	text-align: left;
 	color: #fff;
 }
 
 .checkbox-group {
 	display: inline-block;
-	margin-right: 115px;
+	margin-right: 119px;
 	vertical-align: middle;
 }
 
@@ -459,7 +467,7 @@ section.features {
 }
 
 .list-options {
-	padding-top: 10px;
+	padding-top: 7px;
 }
 
 .form-checkbox {
@@ -469,8 +477,8 @@ section.features {
 .checkbox-group .control-label {
 	position: relative;
 	display: inline-block;
-	margin-bottom: 30px;
-	padding-left: 35px;
+	margin-bottom: 26px;
+	padding-left: 41px;
 	line-height: 21px;
 	color: #fff;
 }
@@ -606,6 +614,7 @@ section.features {
 /*-----------------section.sort-------------------*/
 .sort {
 	display: flex;
+	padding: 31px 0;
 }
 
 .sort .big-headline {
@@ -799,19 +808,19 @@ section.features {
 	background-color: rgb(255, 255, 255);
 }
 
-/*-------------------------popap----------------------------*/
+/*-------------------------modal----------------------------*/
 .form-horizontal {
 	display: none;
 	width: 458px;
 	margin: 0 auto;
-	padding: 55px 55px;
+	padding: 51px 55px;
 	background: #fff;
 }
 
 .form-group {
 	position: relative;
 	display: flex;
-	margin-bottom: 15px;
+	margin-bottom: 24px;
 	text-align: right;
 	justify-content: space-between;
 }
@@ -884,6 +893,10 @@ section.features {
 
 .form-horizontal .btn {
 	width: 100%;
+    margin-top: 28px;
+    padding: 17px 17px;
+	font-size: 21px;
+	line-height: 26px;
 }
 
 .btn:hover {
@@ -967,7 +980,7 @@ section.features {
 
 .show-map {
 	position: fixed;
-	top: 5%;
+	top: 38%;
 	left: 50%;
 	z-index: 200;
 	-webkit-transform: translateX(-50%);

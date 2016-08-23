@@ -5,11 +5,9 @@
 	<title>Добро пожаловать в Sedona!!!</title>
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic,latin" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
 
@@ -36,6 +34,7 @@
 	</header>
 
 	<main class="container">
+
 		<section class="about">
 			<h1 class="visually-hidden">Sedona<br></h1>
 			<div class="sedona-fon">
@@ -106,6 +105,7 @@
 		<section class="map">
 			<img src="img/big-map.jpg" width="1200" height="593" alt="map">
 		</section>
+
 	</main>
 
 	<footer class="main-footer">
@@ -133,23 +133,23 @@
 	<form class="form-horizontal" action="#" method="post" id="search-hotel">
 		<div class="form-group">
 			<label for="data-in" class="control-label icon">Дата заезда:</label>
-			<input class="form-control" type="text" id="data-in" name="data-in" value="24 апреля 2016">
+			<input class="form-control" type="text" id="data-in" name="data-in" placeholder="24 апреля 2016" onfocus="placeholder='';" onblur="placeholder='24 апреля 2016';">
 		</div>
 		<div class="form-group">
 			<label for="data-out" class="control-label icon">Дата выезда:</label>
-			<input class="form-control" type="text" id="data-out" name="data-out" value="4 июля 2016">
+			<input class="form-control" type="text" id="data-out" name="data-out" placeholder="4 июля 2016" onfocus="placeholder='';" onblur="placeholder='4 июля 2016';">
 		</div>
 		<div class="form-group">
 			<div class="control">
 				<label class="control-label">Взрослые:</label>
 				<span class="minus"></span>
-				<input class="form-control small-form" type="type" name="adults" value="2">
+				<input class="form-control small-form" type="type" name="adults" pattern="^[ 0-9]+$" placeholder="2" onfocus="placeholder='';" onblur="placeholder='2';">
 				<span class="plus"></span>
 			</div>
 			<div class="control">
 				<label class="control-label">Дети:</label>
 				<span class="minus"></span>
-				<input class="form-control small-form" type="type" name="children" value="0">
+				<input class="form-control small-form" type="type" name="children" pattern="^[ 0-9]+$" placeholder="0" onfocus="placeholder='';" onblur="placeholder='0';">
 				<span class="plus"></span>
 			</div>
 		</div>
@@ -157,7 +157,6 @@
 	</form>
 	<!-- /модальное окно -->
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="js/js.js"></script>
 </body>
 </html>
