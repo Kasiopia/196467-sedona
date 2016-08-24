@@ -365,7 +365,7 @@ section.features {
 	display: inline-block;
 	width: 46px;
 	height: 48px;
-	margin: 0 6px;
+	margin: 0 1px;
 	vertical-align: middle;
 	background: #81b3d2 url("../img/sprites.png") no-repeat center;
 	transition:
@@ -436,21 +436,19 @@ section.features {
 /*----------------HOTEL PAGE-------------*/
 /*----------------section.offers-filter----------------*/
 .offers-filter {
-	background: url(../img/background-hotel.jpg) 61% no-repeat;
-	background-size: cover;
+	background: url(../img/background-hotel.jpg) 0 -291px no-repeat;
+    background-size: cover;
 }
 
-.form-offers,
-.sort,
-.hotel-groups {
-	padding: 0px 71px;
+.form-offers {
+	padding: 0px 71px 4px 71px;
 }
 
 .offers-filter .sub-headline {
-	margin-bottom: 18px;
+	margin-bottom: 19px;
 	padding-top: 27px;
 	font-size: 16px;
-    line-height: 21px;
+	line-height: 21px;
 	text-align: left;
 	color: #fff;
 }
@@ -467,7 +465,7 @@ section.features {
 }
 
 .list-options {
-	padding-top: 7px;
+	padding-top: 9px;
 }
 
 .form-checkbox {
@@ -475,12 +473,12 @@ section.features {
 }
 
 .checkbox-group .control-label {
-	position: relative;
-	display: inline-block;
-	margin-bottom: 26px;
-	padding-left: 41px;
-	line-height: 21px;
-	color: #fff;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 25px;
+    padding-left: 41px;
+    line-height: 21px;
+    color: #fff;
 }
 
 .checkbox-group .control-label::before {
@@ -521,8 +519,13 @@ section.features {
 	background-position: -251px -50px;
 }
 
-.padding {
-	margin-left: 10px;
+.margin {
+	margin-left: 15px;
+}
+
+.cost-filter .sub-headline {
+    padding-top: 27px;
+    margin-bottom: 10px;
 }
 
 .price-controls {
@@ -540,7 +543,7 @@ section.features {
 
 .price-controls input[type="text"] {
 	width: 64px;
-	padding: 10px 0 10px 5px;
+	padding: 7px 0 7px 5px;
 	font-size: 14px;
 	color: #fff;
 	background: transparent;
@@ -591,7 +594,7 @@ section.features {
 	left: 0px;
 }
 .range-controls .max-toggle {
-	left: 255px;
+	left: 251px;
 }
 
 .range-controls .toggle:hover {
@@ -599,7 +602,7 @@ section.features {
 }
 
 .form-offers .btn {
-	padding: 7px 35px;
+	padding: 6px 34px;
 	font-weight: normal;
 	background: transparent;
 	border-radius: 2px;
@@ -618,11 +621,12 @@ section.features {
 }
 
 .sort .big-headline {
-	width: auto;
+    width: 165px;
+    margin: 0 0 0 73px;
+    text-align: left;
 }
 
 .sorting {
-	margin-left: 50px;
 	font-size: 12px;
 	line-height: 18px;
 	text-transform: uppercase;
@@ -706,8 +710,6 @@ section.features {
 	border-bottom: none;
 }
 
-
-
 /*-------------section.hotels --------------*/
 
 .left-content .main-headline:hover {
@@ -724,6 +726,7 @@ section.features {
 
 .hotel-groups {
 	display: flex;
+	padding: 28px 73px;
 	justify-content: space-between;
 	border-top: 1px solid #e5e5e5;
 }
@@ -782,6 +785,7 @@ section.features {
 }
 
 .star-block {
+	font-size: 21px;
 	text-align: right;
 }
 
@@ -804,7 +808,7 @@ section.features {
 .hotels-page .position-footer{
 	position: relative;
 	top: 0;
-	padding: 19px 0;
+	padding: 35px 0 37px;
 	background-color: rgb(255, 255, 255);
 }
 
