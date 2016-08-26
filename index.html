@@ -109,22 +109,22 @@
 	</main>
 
 	<footer class="main-footer container">
-			<div class="position-footer">
-				<h2 class="main-headline">
-					<a href="#">#Visitsedona</a>
-				</h2>
-				<p class="footer-social">
-					<span class="visually-hidden">Подписывайтесь на нас в соцсетях:</span>
-					<a class="social-btn social-btn-inst" href="#"></a>
-					<a class="social-btn social-btn-fb" href="#"></a>
-					<span class="visually-hidden">Подписывайтесь на наш канал в youtube:</span>
-					<a class="social-btn social-btn-ytb" href="#"></a>
-				</p>
-				<p class="footer-copyright">
-					<b class="copyright-title">Website by</b>
-					<a class="btn" href="https://htmlacademy.ru"></a>
-				</p>
-			</div>
+		<div class="position-footer">
+			<h2 class="main-headline">
+				<a href="#">#Visitsedona</a>
+			</h2>
+			<p class="footer-social">
+				<span class="visually-hidden">Подписывайтесь на нас в соцсетях:</span>
+				<a class="social-btn social-btn-inst" href="#"></a>
+				<a class="social-btn social-btn-fb" href="#"></a>
+				<span class="visually-hidden">Подписывайтесь на наш канал в youtube:</span>
+				<a class="social-btn social-btn-ytb" href="#"></a>
+			</p>
+			<p class="footer-copyright">
+				<b class="copyright-title">Website by</b>
+				<a class="btn" href="https://htmlacademy.ru"></a>
+			</p>
+		</div>
 	</footer>
 
 	<!-- модальное окно -->
@@ -140,15 +140,19 @@
 		<div class="form-group">
 			<div class="control">
 				<label class="control-label">Взрослые:</label>
-				<span class="minus"></span>
-				<input class="form-control small-form" type="type" name="adults" pattern="^[ 0-9]+$" placeholder="2" onfocus="placeholder='';" onblur="placeholder='2';">
-				<span class="plus"></span>
+				<div>
+					<span class="minus"></span>
+					<input class="form-control small-form" type="type" name="adults" value="0" disabled>
+					<span class="plus"></span>
+				</div>
 			</div>
-			<div class="control">
+			<div class="control">d
 				<label class="control-label">Дети:</label>
-				<span class="minus"></span>
-				<input class="form-control small-form" type="type" name="children" pattern="^[ 0-9]+$" placeholder="0" onfocus="placeholder='';" onblur="placeholder='0';">
-				<span class="plus"></span>
+				<div>
+					<span class="minus"></span>
+					<input class="form-control small-form" type="type" name="children" value="0" disabled>
+					<span class="plus"></span>
+				</div>
 			</div>
 		</div>
 		<button type="submit" class="btn">Найти</button>
