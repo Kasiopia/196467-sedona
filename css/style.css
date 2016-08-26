@@ -1,5 +1,6 @@
 html,
 body {
+	position: relative;
 	min-width: 320px;
 	font-size: 16px;
 	line-height: 21px;
@@ -171,6 +172,7 @@ select {
 /*------------header------------*/
 .main-header {
 	background-color: #fefefe;
+	box-shadow: 0px 5px 15px 0px rgba(0,1,1,0.2);
 }
 
 .logo {
@@ -180,6 +182,11 @@ select {
 	z-index: 2;
 }
 
+.main-navigation {
+	width: 1056px;
+	margin: 0 auto;
+}
+
 .site-navigation {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -187,8 +194,8 @@ select {
 	display: flex;
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
-	-webkit-justify-content: space-around;
-	justify-content: space-around;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
 	padding: 15px 0;
 }
 
@@ -239,6 +246,7 @@ select {
 
 main {
 	background-color: #fff;
+	box-shadow: 0px 5px 15px 0px rgba(0,1,1,0.2);
 }
 
 /*-------section.features-------*/
@@ -339,12 +347,14 @@ section.features {
 /*-------footer-------*/
 .main-footer {
 	position: relative;
+	box-shadow: 0px 5px 15px 0px rgba(0,1,1,0.2);
 }
 
 .position-footer {
 	position: absolute;
-    top: -120px;
-    padding: 35px 0 37px;
+	width: 1200px;
+  top: -120px;
+  padding: 35px 0 37px;
 	background-color: rgba(255, 255, 255, 0.9);
 }
 
@@ -479,6 +489,7 @@ section.features {
     padding-left: 41px;
     line-height: 21px;
     color: #fff;
+		cursor: pointer;
 }
 
 .checkbox-group .control-label::before {
@@ -551,6 +562,22 @@ section.features {
 	border: none;
 }
 
+.price-controls ::-webkit-input-placeholder {
+	color:#fff;
+}
+
+.price-controls::-moz-placeholder          {
+	color:#fff;
+	}/* Firefox 19+ */
+
+.price-controls:-moz-placeholder           {
+	color:#fff;
+	}/* Firefox 18- */
+
+.price-controls:-ms-input-placeholder      {
+	color:#fff;
+}
+
 .vertical-line {
 	position: absolute;
 	width: 2px;
@@ -618,6 +645,7 @@ section.features {
 .sort {
 	display: flex;
 	padding: 31px 0;
+	align-items: center;
 }
 
 .sort .big-headline {
@@ -928,13 +956,26 @@ section.features {
 	right: 15px;
 }
 
+.plus::after {
+	content: '';
+	position: absolute;
+	top: -4px;
+	right: 5px;
+	width: 3px;
+	height: 12px;
+	background: #a9a9a9;
+	cursor: pointer;
+}
+
 .minus:hover,
-.plus:hover{
+.plus:hover,
+.plus:hover::after {
 	background: #000;
 }
 
 .minus:active,
-.plus:active {
+.plus:active,
+.plus:active::after  {
 	background: #81b3d2;
 }
 
@@ -983,8 +1024,8 @@ section.features {
 }
 
 .show-map {
-	position: fixed;
-	top: 38%;
+	position: absolute;
+	bottom: 198px;
 	left: 50%;
 	z-index: 200;
 	-webkit-transform: translateX(-50%);
