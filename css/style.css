@@ -189,13 +189,14 @@ select {
 .site-navigation {
 	display: -webkit-box;
 	display: -ms-flexbox;
-	display: -webkit-flex;
 	display: flex;
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
-	-webkit-justify-content: space-between;
 	justify-content: space-between;
 	padding: 15px 0;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
 }
 
 .site-navigation a {
@@ -214,10 +215,14 @@ select {
 	color: #b2b2b2; 
 }
 
+.site-navigation li:nth-child(4n+2) {
+	-ms-flex-preferred-size: 331px;
+	flex-basis: 331px;
+}
 /*-------section.about------*/
 .sedona-fon {
 	margin-bottom: 60px;
-	background: url("../img/main-background.jpg") no-repeat top center;
+	background: grey url("../img/main-background.jpg") no-repeat top center;
 	background-position-y: -56px;
 }
 
@@ -259,8 +264,7 @@ section.features {
 }
 
 .illustration-image,
-.illustration-description
-{
+.illustration-description {
 	float: right;
 }
 
@@ -276,7 +280,7 @@ section.features {
 	margin: 0 auto;
 }
 
-.text-comment {  /*общий класс для многих блоков*/
+.text-comment {
 	width: 280px;
 	margin: 0 auto;
 	padding-top: 24px;
@@ -287,7 +291,7 @@ section.features {
 	display: inline-block;
 	padding: 58px 0 80px;
 	text-align: center;
-	vertical-align: middle;
+	vertical-align: top;
 }
 
 .sub-headline {
@@ -312,7 +316,7 @@ section.features {
 	display: inline-block;
 	padding: 47px 0 56px;
 	text-align: center;
-	vertical-align: middle;
+	vertical-align: top;
 }
 
 /*-------section.offers-------*/
@@ -352,8 +356,8 @@ section.features {
 .position-footer {
 	position: absolute;
 	width: 1200px;
-  top: -120px;
-  padding: 35px 0 37px;
+	top: -120px;
+	padding: 35px 0 37px;
 	background-color: rgba(255, 255, 255, 0.9);
 }
 
@@ -377,6 +381,8 @@ section.features {
 	margin: 0 1px;
 	vertical-align: middle;
 	background: #81b3d2 url("../img/sprites.png") no-repeat center;
+	-webkit-transition: background-position 0.5s,
+	background-color 0.5s;
 	transition:
 	background-position 0.5s,
 	background-color 0.5s;
@@ -445,8 +451,8 @@ section.features {
 /*----------------HOTEL PAGE-------------*/
 /*----------------section.offers-filter----------------*/
 .offers-filter {
-	background: url(../img/background-hotel.jpg) 0 -291px no-repeat;
-    background-size: cover;
+	background: grey url(../img/background-hotel.jpg) 0 -291px no-repeat;
+	background-size: cover;
 }
 
 .form-offers {
@@ -482,13 +488,13 @@ section.features {
 }
 
 .checkbox-group .control-label {
-    position: relative;
-    display: inline-block;
-    margin-bottom: 25px;
-    padding-left: 41px;
-    line-height: 21px;
-    color: #fff;
-		cursor: pointer;
+	position: relative;
+	display: inline-block;
+	margin-bottom: 25px;
+	padding-left: 41px;
+	line-height: 21px;
+	color: #fff;
+	cursor: pointer;
 }
 
 .checkbox-group .control-label::before {
@@ -534,8 +540,8 @@ section.features {
 }
 
 .cost-filter .sub-headline {
-    padding-top: 27px;
-    margin-bottom: 10px;
+	padding-top: 27px;
+	margin-bottom: 10px;
 }
 
 .price-controls {
@@ -566,15 +572,15 @@ section.features {
 	color:#fff;
 }
 
-.price-controls::-moz-placeholder          {
+.price-controls::-moz-placeholder {
 	color:#fff;
-	}/* Firefox 19+ */
+}/* Firefox 19+ */
 
-.price-controls:-moz-placeholder           {
+.price-controls:-moz-placeholder {
 	color:#fff;
-	}/* Firefox 18- */
+}/* Firefox 18- */
 
-.price-controls:-ms-input-placeholder      {
+.price-controls:-ms-input-placeholder {
 	color:#fff;
 }
 
@@ -643,15 +649,19 @@ section.features {
 
 /*-----------------section.sort-------------------*/
 .sort {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	padding: 31px 0;
+	padding: 31px 73px;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 }
 
 .sort .big-headline {
-    width: 165px;
-    margin: 0 0 0 73px;
-    text-align: left;
+	width: 165px;
+	margin: 0px;
+	text-align: left;
 }
 
 .sorting {
@@ -664,6 +674,10 @@ section.features {
 .block-inline {
 	display: inline-block;
 	vertical-align: middle;
+}
+
+.sort-right {
+	margin-left: auto;
 }
 
 .list-sort li {
@@ -696,10 +710,6 @@ section.features {
 
 .list-sort a {
 	margin-left: 30px;
-}
-
-.up-down-sort {
-	margin-left: 483px;
 }
 
 .list-sort .sorting-up,
@@ -753,9 +763,13 @@ section.features {
 }
 
 .hotel-groups {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	padding: 28px 73px;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	border-top: 1px solid #e5e5e5;
 }
 
@@ -867,10 +881,16 @@ section.features {
 
 .form-group {
 	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	margin-bottom: 37px;
 	text-align: right;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 }
 
@@ -924,9 +944,15 @@ section.features {
 	position: relative;
 	width: 50%;
 	font-size: 0px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 .icon::after {
