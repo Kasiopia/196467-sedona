@@ -347,6 +347,12 @@ section.features {
 	background: #766357;
 }
 
+/*--------section.map-------*/
+.big-map {
+	min-height: 593px;
+	background: grey url("../img/big-map.jpg") no-repeat top center;
+}
+
 /*-------footer-------*/
 .main-footer {
 	position: relative;
